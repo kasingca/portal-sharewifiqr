@@ -1,0 +1,35 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "stardust/current/brand-review.html"
+        ],
+        "createdAt": "2026-11-22T21:12:17.129Z",
+        "reason": "stardust brand-review-template.md mandates border-left accent on tension cards and component list"
+      },
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "files": [
+          "stardust/current/brand-review.html"
+        ],
+        "createdAt": "2026-11-22T21:12:17.231Z",
+        "reason": "brand-review must render in the site's captured font; Inter is the extracted brand face"
+      },
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "files": [
+          "styles/styles.css"
+        ],
+        "createdAt": "2026-11-22T22:52:52.664Z",
+        "reason": "same-design replica (stardust replica flow): Inter is the source app's captured font stack; register has no font delta"
+      }
+    ]
+  }
+}

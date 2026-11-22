@@ -1,0 +1,53 @@
+{
+  "total": 5,
+  "offset": 0,
+  "limit": 5,
+  "data": [
+    {
+      "URL": "/**",
+      "api-mode": "mock",
+      "api-base": "https://api.sharewifiqr.com",
+      "demo-mode": "true",
+      "persona": "",
+      "nav": "",
+      "footer": ""
+    },
+    {
+      "URL": "/customer/**",
+      "api-mode": "",
+      "api-base": "",
+      "demo-mode": "",
+      "persona": "customer",
+      "nav": "/customer/nav",
+      "footer": "/customer/footer"
+    },
+    {
+      "URL": "/customer",
+      "api-mode": "",
+      "api-base": "",
+      "demo-mode": "",
+      "persona": "customer",
+      "nav": "/customer/nav",
+      "footer": "/customer/footer"
+    },
+    {
+      "URL": "/admin/**",
+      "api-mode": "",
+      "api-base": "",
+      "demo-mode": "",
+      "persona": "admin",
+      "nav": "/admin/nav",
+      "footer": "/admin/footer"
+    },
+    {
+      "URL": "/admin",
+      "api-mode": "",
+      "api-base": "",
+      "demo-mode": "",
+      "persona": "admin",
+      "nav": "/admin/nav",
+      "footer": "/admin/footer"
+    }
+  ],
+  ":type": "sheet"
+}

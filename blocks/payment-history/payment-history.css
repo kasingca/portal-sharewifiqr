@@ -1,0 +1,46 @@
+.payment-history .date-presets,
+.payment-history .pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.payment-history .billing-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-top: 1px solid var(--border);
+  padding: 11px 21px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.payment-history .pagination-controls label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.payment-history .pagination-controls select {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  padding: 7px 8px;
+}
+
+.payment-history .pagination-controls button:disabled {
+  opacity: 0.42;
+  cursor: default;
+  background: transparent;
+  color: var(--muted);
+}
+
+@media (width <= 700px) {
+  .payment-history .billing-pagination {
+    padding-inline: 13px;
+  }
+}

@@ -1,0 +1,61 @@
+
+Visual diff @ 360px (profile "generic") — screenshots in stardust/replica/gates/codes-360/vdiff-iter1/
+
+build red flags (advisory): 
+  • CONTENT GAP: source 1 headings / 1 content-boxes / main 891px vs build 1 / 1 / 408px. Heading/box/height shortfall vs the source — likely dropped or duplicated content.
+
+Full metrics JSON (compare source vs build: heading colors, eyebrow colors, image dims, full-bleed):
+{
+ "source": {
+  "viewport": 360,
+  "blankRender": false,
+  "mainHeight": 891,
+  "textLen": 280,
+  "images": [],
+  "headings": [
+   {
+    "tag": "h1",
+    "text": "Wi-Fi QR codes",
+    "color": "rgb(33, 29, 53)",
+    "fontSize": "29px",
+    "family": "system-ui",
+    "fontLoaded": true
+   }
+  ],
+  "eyebrows": [],
+  "flushText": [],
+  "contentBoxes": [
+   {
+    "sel": "page-heading",
+    "width": 332,
+    "left": 14
+   }
+  ]
+ },
+ "build": {
+  "viewport": 360,
+  "blankRender": false,
+  "mainHeight": 408,
+  "textLen": 280,
+  "images": [],
+  "headings": [
+   {
+    "tag": "h1",
+    "text": "Wi-Fi QR codes",
+    "color": "rgb(33, 29, 53)",
+    "fontSize": "29px",
+    "family": "system-ui",
+    "fontLoaded": true
+   }
+  ],
+  "eyebrows": [],
+  "flushText": [],
+  "contentBoxes": [
+   {
+    "sel": "page-heading",
+    "width": 332,
+    "left": 14
+   }
+  ]
+ }
+}

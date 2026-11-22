@@ -1,0 +1,26 @@
+
+Content diff @ 360px (profile "generic", roots: main, header, footer)
+root "main"
+  source: 133 text nodes — 2 headings, 0 eyebrows, 0 CTAs, 131 body; 0 img
+  build: 133 text nodes — 2 headings, 0 eyebrows, 2 CTAs, 129 body; 0 img
+  editable texts (outermost h*/p/ul/ol): source 4 / build 4
+  attributes (placeholder/aria-label/title): source 3 / build 3; icons: source 7 / build 7
+root "header"
+  source: 6 text nodes — 0 headings, 0 eyebrows, 1 CTAs, 5 body; 0 img
+  build: 6 text nodes — 0 headings, 0 eyebrows, 1 CTAs, 5 body; 0 img
+  editable texts (outermost h*/p/ul/ol): source 0 / build 0
+  attributes (placeholder/aria-label/title): source 1 / build 1; icons: source 4 / build 4
+root "footer"
+  source: 3 text nodes — 0 headings, 0 eyebrows, 0 CTAs, 3 body; 0 img
+  build: 3 text nodes — 0 headings, 0 eyebrows, 2 CTAs, 1 body; 0 img
+  editable texts (outermost h*/p/ul/ol): source 0 / build 0
+  attributes (placeholder/aria-label/title): source 0 / build 0; icons: source 0 / build 0
+
+Findings: 2 (0 structural 🔴)
+Tiers: looks-same 🔴 0 · nothing-lost 🟡 0 · accepted 🟢 4 (owner 4, auto 0) · advisory 2
+  🟡 MISSING BODY [main]: source body "maya@example.com · Joined Mar 12, 2026 · Plus pl"… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 EXTRA [main]: build body "maya@example.com · Joined Mar 12, 2026 · Plus pl" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟢 ROLE SWAP [main] accepted (stardust/replica/accepted.json): R-04: back navigation rendered as a link instead of a JS <button>; same look
+  🟢 ROLE SWAP [main] accepted (stardust/replica/accepted.json): R-04: navigation to the impersonated workspace rendered as a link instead of a JS <button>; same look
+  🟢 ROLE SWAP [footer] accepted (stardust/replica/accepted.json): R-04: authored footer link instead of a JS <button>; same look
+  🟢 ROLE SWAP [footer] accepted (stardust/replica/accepted.json): R-04: authored footer link instead of a JS <button>; same look

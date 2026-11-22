@@ -1,0 +1,147 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-11-22T21:17:30.187Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "customer-b2693d9c2124f3ca9547b897794ac6a1-privacy",
+  "url": "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/privacy",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-11-22T21:17:30.187Z",
+  "finalUrl": "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/privacy",
+  "title": "ShareWiFiQR | Portal",
+  "description": "Manage Wi-Fi QR codes and track scans.",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Privacy"
+    },
+    {
+      "tag": "h2",
+      "text": "Your information"
+    },
+    {
+      "tag": "h2",
+      "text": "Information you share with guests"
+    },
+    {
+      "tag": "h2",
+      "text": "Prototype data"
+    }
+  ],
+  "body": [
+    "Draft for the ShareWiFiQR portal.",
+    "We never share your information with third parties. The portal uses your first name, last name, and email address for your account profile.",
+    "The Wi-Fi details you enter are intended for anyone you give the QR code or scan link to. Anyone who receives a forwarded link can also open the guest page in the live service.",
+    "Changes in this demo are stored in your current browser. Use sample Wi-Fi passwords and profile details while trying it out."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "ShareWiFiQRWORKSPACE",
+      "href": "https://www.sharewifiqr.com"
+    },
+    {
+      "label": "Overview",
+      "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1"
+    },
+    {
+      "label": "Wi-Fi QR codes",
+      "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1/codes"
+    },
+    {
+      "label": "Billing",
+      "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1/billing"
+    },
+    {
+      "label": "My profile",
+      "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1/profile"
+    },
+    {
+      "label": "Help center",
+      "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1/help"
+    },
+    {
+      "label": "Portal",
+      "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1"
+    },
+    {
+      "label": "Terms & conditions",
+      "href": null
+    },
+    {
+      "label": "Privacy",
+      "href": null
+    }
+  ],
+  "links": [
+    "https://www.sharewifiqr.com/",
+    "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1",
+    "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/codes",
+    "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/billing",
+    "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/profile",
+    "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/help"
+  ],
+  "media": {
+    "imgs": [],
+    "allImgCount": 0,
+    "cssBackgrounds": [],
+    "modals": [],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--ink": "#211d35",
+    "--muted": "#6d6a80",
+    "--border": "#e9e7f0",
+    "--canvas": "#f8f8fc",
+    "--purple": "#654ce0",
+    "--purple-dark": "#533dc4",
+    "--white": "#fff",
+    "--lightningcss-light": "initial"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 4,
+    "mainTextLen": 545,
+    "realImageCount": 0,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage",
+    "pageSize": {
+      "w": 1440,
+      "h": 900
+    }
+  },
+  "dynamic": {
+    "endpoints": [],
+    "thirdPartyScriptHosts": [],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 0,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 0,
+      "thirdPartyEndpoints": 0,
+      "thirdPartyScriptHosts": 0,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/customer-b2693d9c2124f3ca9547b897794ac6a1-privacy.png",
+  "renderedHtml": "pages/customer-b2693d9c2124f3ca9547b897794ac6a1-privacy.html"
+}

@@ -1,0 +1,11 @@
+{
+  "writtenBy": "gate.sh --gate-against-baseline",
+  "origin": "baseline",
+  "url": "http://localhost:3000/customer/sign-in",
+  "width": 360,
+  "at": "2026-11-22T22:30:50.167Z",
+  "originBaseline": {
+    "capturedAt": "2026-11-22T22:30:50.167Z",
+    "height": 900
+  }
+}

@@ -1,0 +1,4 @@
+clip-probe http://localhost:3001/customer/codes/detail?id=studio-guest @ 1440px — docH 1104, 54 text nodes, 17 controls (HTTP 200, chrome)
+  (none)
+Clipped: 0 (text clipped 0, text hidden 0, controls hidden 0, controls clipped 0; advisory: clamped 0, collapsed 0, scroll-hidden 0, horizontal 1)
+json → stardust/replica/gates/detail-1440/clip-iter2.json

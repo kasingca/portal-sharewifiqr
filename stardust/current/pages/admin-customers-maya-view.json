@@ -1,0 +1,185 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-11-22T21:23:08.573Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "admin-customers-maya-view",
+  "url": "http://localhost:3000/admin/customers/maya/view",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-11-22T21:23:08.573Z",
+  "finalUrl": "http://localhost:3000/admin/customers/maya/view",
+  "title": "ShareWiFiQR | Portal",
+  "description": "Manage Wi-Fi QR codes and track scans.",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Overview"
+    },
+    {
+      "tag": "h2",
+      "text": "Scan activity"
+    },
+    {
+      "tag": "h2",
+      "text": "Your Wi-Fi QR codes"
+    }
+  ],
+  "body": [
+    "Manage your Wi-Fi QR codes and see how guests use them.",
+    "How often guests opened your Wi-Fi links",
+    "Sep 28 – Nov 22, 2026 · Demo activity through Nov 22, 2026",
+    "Open a code to manage it or see its activity."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "ShareWiFiQRWORKSPACE",
+      "href": "https://www.sharewifiqr.com"
+    },
+    {
+      "label": "Overview",
+      "href": "/admin/customers/maya/view/overview"
+    },
+    {
+      "label": "Wi-Fi QR codes",
+      "href": "/admin/customers/maya/view/codes"
+    },
+    {
+      "label": "Billing",
+      "href": "/admin/customers/maya/view/billing"
+    },
+    {
+      "label": "My profile",
+      "href": "/admin/customers/maya/view/profile"
+    },
+    {
+      "label": "Help center",
+      "href": "/admin/customers/maya/view/help"
+    },
+    {
+      "label": "Portal",
+      "href": "/admin/customers/maya/view/overview"
+    },
+    {
+      "label": "Exit customer view",
+      "href": null
+    },
+    {
+      "label": "Create QR code",
+      "href": null
+    },
+    {
+      "label": "View all",
+      "href": null
+    },
+    {
+      "label": "Studio Guest Wi-Fi",
+      "href": "/admin/customers/maya/view/codes/studio-guest"
+    },
+    {
+      "label": "Home Network",
+      "href": "/admin/customers/maya/view/codes/home-network"
+    },
+    {
+      "label": "Sunday Market",
+      "href": "/admin/customers/maya/view/codes/sunday-market"
+    },
+    {
+      "label": "Terms & conditions",
+      "href": null
+    },
+    {
+      "label": "Privacy",
+      "href": null
+    }
+  ],
+  "links": [
+    "https://www.sharewifiqr.com/",
+    "http://localhost:3000/admin/customers/maya/view/overview",
+    "http://localhost:3000/admin/customers/maya/view/codes",
+    "http://localhost:3000/admin/customers/maya/view/billing",
+    "http://localhost:3000/admin/customers/maya/view/profile",
+    "http://localhost:3000/admin/customers/maya/view/help",
+    "http://localhost:3000/admin/customers/maya/view/codes/studio-guest",
+    "http://localhost:3000/admin/customers/maya/view/codes/home-network",
+    "http://localhost:3000/admin/customers/maya/view/codes/sunday-market"
+  ],
+  "media": {
+    "imgs": [],
+    "allImgCount": 0,
+    "cssBackgrounds": [],
+    "modals": [],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--ink": "#211d35",
+    "--muted": "#6d6a80",
+    "--border": "#e9e7f0",
+    "--canvas": "#f8f8fc",
+    "--purple": "#654ce0",
+    "--purple-dark": "#533dc4",
+    "--white": "#fff",
+    "--lightningcss-light": "initial"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 3,
+    "mainTextLen": 966,
+    "realImageCount": 0,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage",
+    "pageSize": {
+      "w": 1440,
+      "h": 1152
+    },
+    "duplicateOf": "customer-b2693d9c2124f3ca9547b897794ac6a1"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "POST",
+        "host": "localhost:3000",
+        "path": "/__nextjs_original-stack-frames",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "http://localhost:3000/__nextjs_original-stack-frames",
+        "sameSite": true
+      }
+    ],
+    "thirdPartyScriptHosts": [],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 1,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 1,
+      "thirdPartyEndpoints": 0,
+      "thirdPartyScriptHosts": 0,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/admin-customers-maya-view.png",
+  "renderedHtml": "pages/admin-customers-maya-view.html"
+}

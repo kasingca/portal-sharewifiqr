@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "stages": {
+    "local-build": {
+      "rounds": [
+        {
+          "label": "iter1",
+          "at": "2026-11-22T21:59:29.895Z",
+          "verdict": "pass",
+          "kind": "first"
+        }
+      ],
+      "decisions": []
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "a": "stardust/replica/gates/billing-360/live.png",
+  "b": "stardust/replica/gates/billing-360/build.png",
+  "compared": {
+    "width": 360,
+    "height": 3077,
+    "mode": "overlap"
+  },
+  "heightDelta": 7,
+  "differingPixels": 51847,
+  "pct": 4.68,
+  "threshold": 10,
+  "pass": true,
+  "diff": "stardust/replica/gates/billing-360/diff-iter1.png",
+  "masks": [],
+  "maskedRows": 0,
+  "textPct": null,
+  "textBoxes": null,
+  "textPixels": null,
+  "bands": [
+    {
+      "y0": 0,
+      "y1": 500,
+      "pct": 1.1
+    },
+    {
+      "y0": 500,
+      "y1": 1000,
+      "pct": 6
+    },
+    {
+      "y0": 1000,
+      "y1": 1500,
+      "pct": 5.1
+    },
+    {
+      "y0": 1500,
+      "y1": 2000,
+      "pct": 7.5
+    },
+    {
+      "y0": 2000,
+      "y1": 2500,
+      "pct": 3.9
+    },
+    {
+      "y0": 2500,
+      "y1": 3000,
+      "pct": 4.2
+    },
+    {
+      "y0": 3000,
+      "y1": 3077,
+      "pct": 6.2
+    }
+  ],
+  "verdict": "aligned",
+  "aligned": {
+    "used": true,
+    "pct": 0.58,
+    "differingPixels": 6396,
+    "compared": {
+      "width": 360,
+      "height": 3084,
+      "mode": "aligned"
+    },
+    "steps": [
+      {
+        "y": 397,
+        "shift": -7,
+        "cumulative": -7
+      }
+    ],
+    "maxOffset": 7,
+    "totalShift": 7,
+    "insertedRows": 0,
+    "deletedRows": 7,
+    "bands": [
+      {
+        "y0": 0,
+        "y1": 500,
+        "pct": 2,
+        "unaligned": 1.1
+      },
+      {
+        "y0": 500,
+        "y1": 1000,
+        "pct": 0.5,
+        "unaligned": 6
+      },
+      {
+        "y0": 1000,
+        "y1": 1500,
+        "pct": 0,
+        "unaligned": 5.1
+      },
+      {
+        "y0": 1500,
+        "y1": 2000,
+        "pct": 0.5,
+        "unaligned": 7.5
+      },
+      {
+        "y0": 2000,
+        "y1": 2500,
+        "pct": 0,
+        "unaligned": 3.9
+      },
+      {
+        "y0": 2500,
+        "y1": 3000,
+        "pct": 0,
+        "unaligned": 4.2
+      },
+      {
+        "y0": 3000,
+        "y1": 3084,
+        "pct": 3,
+        "unaligned": null
+      }
+    ],
+    "diff": "stardust/replica/gates/billing-360/diff-iter1-aligned.png",
+    "reason": null
+  },
+  "offsets": {
+    "bound": 8,
+    "totalShift": 7,
+    "pass": true
+  },
+  "reason": null
+}

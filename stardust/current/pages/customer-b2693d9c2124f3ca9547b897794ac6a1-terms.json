@@ -1,0 +1,147 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-11-22T21:16:39.421Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "customer-b2693d9c2124f3ca9547b897794ac6a1-terms",
+  "url": "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/terms",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-11-22T21:16:39.421Z",
+  "finalUrl": "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/terms",
+  "title": "ShareWiFiQR | Portal",
+  "description": "Manage Wi-Fi QR codes and track scans.",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Terms and conditions"
+    },
+    {
+      "tag": "h2",
+      "text": "Using ShareWiFiQR"
+    },
+    {
+      "tag": "h2",
+      "text": "Sharing QR codes"
+    },
+    {
+      "tag": "h2",
+      "text": "Account access"
+    }
+  ],
+  "body": [
+    "Draft for the ShareWiFiQR portal.",
+    "Use ShareWiFiQR to share Wi-Fi details for networks you own or have permission to share. You are responsible for the information you enter and for keeping it up to date.",
+    "Anyone who has your QR code or scan link can open its guest page when the live service is available. Distribute codes to your intended guests, and keep a copy of your network details so you can share them if the service is unavailable.",
+    "Keep your portal sign-in credentials secure and use an email address you control. This prototype uses demo accounts and sample payment history."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "ShareWiFiQRWORKSPACE",
+      "href": "https://www.sharewifiqr.com"
+    },
+    {
+      "label": "Overview",
+      "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1"
+    },
+    {
+      "label": "Wi-Fi QR codes",
+      "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1/codes"
+    },
+    {
+      "label": "Billing",
+      "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1/billing"
+    },
+    {
+      "label": "My profile",
+      "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1/profile"
+    },
+    {
+      "label": "Help center",
+      "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1/help"
+    },
+    {
+      "label": "Portal",
+      "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1"
+    },
+    {
+      "label": "Terms & conditions",
+      "href": null
+    },
+    {
+      "label": "Privacy",
+      "href": null
+    }
+  ],
+  "links": [
+    "https://www.sharewifiqr.com/",
+    "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1",
+    "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/codes",
+    "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/billing",
+    "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/profile",
+    "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/help"
+  ],
+  "media": {
+    "imgs": [],
+    "allImgCount": 0,
+    "cssBackgrounds": [],
+    "modals": [],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--ink": "#211d35",
+    "--muted": "#6d6a80",
+    "--border": "#e9e7f0",
+    "--canvas": "#f8f8fc",
+    "--purple": "#654ce0",
+    "--purple-dark": "#533dc4",
+    "--white": "#fff",
+    "--lightningcss-light": "initial"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 4,
+    "mainTextLen": 650,
+    "realImageCount": 0,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage",
+    "pageSize": {
+      "w": 1440,
+      "h": 900
+    }
+  },
+  "dynamic": {
+    "endpoints": [],
+    "thirdPartyScriptHosts": [],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 0,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 0,
+      "thirdPartyEndpoints": 0,
+      "thirdPartyScriptHosts": 0,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/customer-b2693d9c2124f3ca9547b897794ac6a1-terms.png",
+  "renderedHtml": "pages/customer-b2693d9c2124f3ca9547b897794ac6a1-terms.html"
+}

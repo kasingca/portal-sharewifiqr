@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "stages": {
+    "local-build": {
+      "rounds": [
+        {
+          "label": "iter1",
+          "at": "2026-11-22T22:18:23.692Z",
+          "verdict": "fail",
+          "kind": "first",
+          "overflow": true
+        },
+        {
+          "label": "iter2",
+          "at": "2026-11-22T22:37:40.453Z",
+          "verdict": "pass",
+          "kind": "fix"
+        },
+        {
+          "label": "iter3",
+          "at": "2026-11-22T22:45:43.819Z",
+          "verdict": "pass",
+          "kind": "confirm"
+        }
+      ],
+      "decisions": []
+    }
+  }
+}

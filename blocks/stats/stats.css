@@ -1,0 +1,18 @@
+.stats .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 16px;
+}
+
+@media (width <= 750px) {
+  .stats .stats-grid.billing {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
+
+@media (width <= 700px) {
+  .stats .stats-grid {
+    gap: 8px;
+  }
+}

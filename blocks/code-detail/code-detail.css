@@ -1,0 +1,72 @@
+.code-detail .detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.code-detail .qr-panel,
+.code-detail .network-panel {
+  padding: 23px;
+}
+
+.code-detail .qr-panel > p,
+.code-detail .network-panel > p {
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.code-detail .qr-preview {
+  display: grid;
+  place-items: center;
+  margin: 17px 0;
+  background: #faf9fe;
+  border: 1px solid #f0edf9;
+  border-radius: 10px;
+  min-height: 200px;
+  color: var(--purple);
+}
+
+.code-detail .qr-preview img {
+  border-radius: 6px;
+}
+
+.code-detail .share-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.code-detail .hint {
+  margin-top: 5px;
+  color: var(--muted);
+}
+
+.code-detail dl {
+  margin: 17px 0 0;
+}
+
+.code-detail dt {
+  color: var(--muted);
+  font-size: 12px;
+  margin: 13px 0 4px;
+}
+
+.code-detail dd {
+  margin: 0;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+
+.code-detail .password-value {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (width <= 700px) {
+  .code-detail .detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
