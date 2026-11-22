@@ -1,8 +1,0 @@
-measure  http://localhost:3001/admin/customers/account?id=maya
-  widths 1440 · 1 selector(s) · 1 props · first match
-
-@ 1440px
-  root  scrollWidth  1440  viewport 1440  scrollHeight   1698
-  html
-       x     0  y      0  w  1440  h  1698  vis  "ShareWiFiQR WORKSPACE ADMINISTRATION Cu…"
-      display: block

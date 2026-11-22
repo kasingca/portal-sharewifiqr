@@ -1,9 +1,0 @@
-measure: http://localhost:3001/customer @360: horizontal overflow +191px (scrollWidth 551 > viewport 360)
-measure  http://localhost:3001/customer
-  widths 360 · 1 selector(s) · 1 props · first match
-
-@ 360px
-  root  scrollWidth   551  viewport 360  scrollHeight   1209  ◄◄ OVERFLOW +191px
-  html
-       x     0  y      0  w   360  h  1209  vis  "ShareWiFiQR WORKSPACE WORKSPACE Overvie…"
-      display: block

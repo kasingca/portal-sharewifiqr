@@ -1,4 +1,0 @@
-clip-probe http://localhost:3001/customer @ 360px — docH 1209, 67 text nodes, 18 controls (HTTP 200, chrome)
-  (none)
-Clipped: 0 (text clipped 0, text hidden 0, controls hidden 0, controls clipped 0; advisory: clamped 0, collapsed 0, scroll-hidden 0, horizontal 4)
-json → stardust/replica/gates/overview-360/clip-iter1.json

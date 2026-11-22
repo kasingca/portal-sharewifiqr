@@ -13,6 +13,7 @@ helix-importer-ui
 !AGENTS.md
 
 # >>> stardust
+stardust/
 .env
 .env.*
 # <<< stardust
