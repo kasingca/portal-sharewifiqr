@@ -11,6 +11,7 @@ import {
   loadCSS,
   buildBlock,
 } from './aem.js';
+import checkSession from './app/session.js';
 
 if (window.trustedTypes && window.trustedTypes.createPolicy) {
   const innerTT = window.trustedTypes.createPolicy('tt-inner', {
@@ -166,9 +167,12 @@ async function loadEager(doc) {
   if (main) {
     decorateMain(main);
     document.body.classList.add('appear');
-    // the portal's app shell (sidebar, top bar, footer) renders alongside the first section
-    loadHeader(doc.querySelector('body > header'));
-    loadFooter(doc.querySelector('body > footer'));
+    // the portal's app shell (sidebar, top bar, footer) renders alongside the first section;
+    // the signed-out entry page has none
+    if (!document.body.classList.contains('entry')) {
+      loadHeader(doc.querySelector('body > header'));
+      loadFooter(doc.querySelector('body > footer'));
+    }
     await loadSection(main.querySelector('.section'), waitForFirstImage);
   }
 
@@ -208,6 +212,8 @@ function loadDelayed() {
 }
 
 async function loadPage() {
+  // workspace pages render only after the API confirms the session
+  if (!(await checkSession())) return;
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();

@@ -137,6 +137,47 @@ footer .footer[data-block-status="loaded"] {
   visibility: visible;
 }
 
+/* ---- session check: only the status shows until the API confirms the session ---- */
+
+body.session-pending.appear {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  place-items: center;
+}
+
+body.session-pending > :not(.session-status) {
+  display: none !important;
+}
+
+.session-status {
+  padding: 24px var(--gutter);
+  font-size: 15px;
+  text-align: center;
+}
+
+/* ---- entry template: the signed-out home page, without the app shell ---- */
+
+body.entry.appear {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+}
+
+body.entry header,
+body.entry footer {
+  display: none;
+}
+
+body.entry main {
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  align-content: center;
+  max-width: none;
+  padding: 64px var(--gutter);
+}
+
 main > .section > div + div {
   margin-top: 0;
 }

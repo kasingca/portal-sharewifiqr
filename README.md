@@ -11,6 +11,7 @@ The signed-in workspace for ShareWiFiQR (`portal.sharewifiqr.com`), built on AEM
 
 | Persona | Path | Blocks |
 |---|---|---|
+| — | `/` | entry (template `entry`: no sidebar, top bar or footer) |
 | customer | `/customer` | page-header, stats (overview), scan-activity, code-table (limit 3) |
 | customer | `/customer/codes` | page-header, code-table |
 | customer | `/customer/codes/detail?id=<code>` | page-header (back, `{name}`), code-detail, scan-activity (code) |
@@ -43,8 +44,13 @@ Each block is configured with `key | value` rows. None of them carries data.
 | `payment-method` | `heading`, `description` |
 | `customer-directory` | `heading`, `description` |
 | `sign-in` | `title`, `description`, `button`, `icon` |
+| `entry` | `title`, `description`, `log-in \| <link>`, `sign-up \| <link>`, `sign-in-failed \| <message>` (shown on `/?error=sign_in_failed`) |
 | `header` | reads `/<persona>/nav`: one `sidebar` block with rows `brand \| url`, `group \| LABEL`, `<screen> \| label \| lucide-icon`, `signed-out \| label \| icon` |
 | `footer` | reads `/<persona>/footer`: one paragraph and the legal links |
+
+## Session check
+
+Every `/customer…` and `/admin…` page (except the `signed-out` demo sign-in pages) shows "Checking your session…" and calls `GET https://api.sharewifiqr.com/v1/me` before any dashboard content renders (`scripts/app/session.js`). On 200 it follows the response's `destination` (`/customer` or `/admin`); on 401 it returns to `/`; anything else shows "We couldn’t check your session. Refresh to try again." An administrator on a customer page with `?as=<id>` stays on it. The API allows credentialed CORS only from `https://portal.sharewifiqr.com`, so on localhost and `*.aem.page` the dashboards stop at that message.
 
 ## App configuration: root metadata
 
