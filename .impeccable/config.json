@@ -29,6 +29,132 @@
         ],
         "createdAt": "2026-11-22T22:52:52.664Z",
         "reason": "same-design replica (stardust replica flow): Inter is the source app's captured font stack; register has no font delta"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "stardust/current/pages/customer.html"
+        ],
+        "createdAt": "2026-11-22T23:44:11.971Z",
+        "reason": "Claude: stardust/current is an extraction capture of the live site (restored from git, not authored); its type scale records the source design"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "stardust/current/pages/customer-b2693d9c2124f3ca9547b897794ac6a1.html"
+        ],
+        "createdAt": "2026-11-22T23:44:12.070Z",
+        "reason": "Claude: stardust/current is an extraction capture of the live site (restored from git, not authored); its type scale records the source design"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "stardust/current/pages/customer-b2693d9c2124f3ca9547b897794ac6a1-terms.html"
+        ],
+        "createdAt": "2026-11-22T23:44:12.167Z",
+        "reason": "Claude: stardust/current is an extraction capture of the live site (restored from git, not authored); its type scale records the source design"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "stardust/current/pages/customer-b2693d9c2124f3ca9547b897794ac6a1-profile.html"
+        ],
+        "createdAt": "2026-11-22T23:44:12.261Z",
+        "reason": "Claude: stardust/current is an extraction capture of the live site (restored from git, not authored); its type scale records the source design"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "stardust/current/pages/customer-b2693d9c2124f3ca9547b897794ac6a1-privacy.html"
+        ],
+        "createdAt": "2026-11-22T23:44:12.356Z",
+        "reason": "Claude: stardust/current is an extraction capture of the live site (restored from git, not authored); its type scale records the source design"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "stardust/current/pages/customer-b2693d9c2124f3ca9547b897794ac6a1-help.html"
+        ],
+        "createdAt": "2026-11-22T23:44:12.474Z",
+        "reason": "Claude: stardust/current is an extraction capture of the live site (restored from git, not authored); its type scale records the source design"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "stardust/current/pages/customer-b2693d9c2124f3ca9547b897794ac6a1-codes-studio-guest.html"
+        ],
+        "createdAt": "2026-11-22T23:44:12.570Z",
+        "reason": "Claude: stardust/current is an extraction capture of the live site (restored from git, not authored); its type scale records the source design"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "stardust/current/pages/customer-b2693d9c2124f3ca9547b897794ac6a1-billing.html"
+        ],
+        "createdAt": "2026-11-22T23:44:12.668Z",
+        "reason": "Claude: stardust/current is an extraction capture of the live site (restored from git, not authored); its type scale records the source design"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "stardust/current/pages/admin.html"
+        ],
+        "createdAt": "2026-11-22T23:44:12.764Z",
+        "reason": "Claude: stardust/current is an extraction capture of the live site (restored from git, not authored); its type scale records the source design"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "stardust/current/pages/admin-profile.html"
+        ],
+        "createdAt": "2026-11-22T23:44:12.865Z",
+        "reason": "Claude: stardust/current is an extraction capture of the live site (restored from git, not authored); its type scale records the source design"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "stardust/current/pages/admin-help.html"
+        ],
+        "createdAt": "2026-11-22T23:44:12.960Z",
+        "reason": "Claude: stardust/current is an extraction capture of the live site (restored from git, not authored); its type scale records the source design"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "stardust/current/pages/admin-customers-maya.html"
+        ],
+        "createdAt": "2026-11-22T23:44:13.053Z",
+        "reason": "Claude: stardust/current is an extraction capture of the live site (restored from git, not authored); its type scale records the source design"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "stardust/current/pages/admin-customers-maya-view.html"
+        ],
+        "createdAt": "2026-11-22T23:44:13.149Z",
+        "reason": "Claude: stardust/current is an extraction capture of the live site (restored from git, not authored); its type scale records the source design"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "stardust/current/brand-review.html"
+        ],
+        "createdAt": "2026-11-22T23:44:13.238Z",
+        "reason": "Claude: stardust/current is an extraction capture of the live site (restored from git, not authored); its type scale records the source design"
       }
     ]
   }
