@@ -1,0 +1,19 @@
+.sign-in .signin {
+  display: grid;
+  place-items: center;
+  min-height: min(520px, 67vh);
+}
+
+.sign-in .signin .card {
+  width: min(100%, 450px);
+  padding: 29px;
+}
+
+.sign-in .signin h1 {
+  font-size: 30px;
+  margin: 15px 0 8px;
+}
+
+.sign-in .signin .button {
+  margin-top: 20px;
+}

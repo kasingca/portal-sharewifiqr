@@ -1,0 +1,458 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-11-22T21:35:00Z",
+    "readArtifacts": [
+      "stardust/current/_crawl-log.json"
+    ],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.46.2"
+  },
+  "site": {
+    "originUrl": "http://localhost:3000",
+    "deployUrl": null,
+    "extractedAt": "2026-11-22T22:00:00Z",
+    "pageCap": 0,
+    "totalDiscovered": 16,
+    "crawled": 16,
+    "notes": "Requested origin https://mock-sharewifiqrcom-git-main-kasing.vercel.app is Vercel-SSO protected; captured the same app from local next dev."
+  },
+  "direction": null,
+  "pages": [
+    {
+      "slug": "admin-customers-maya-view",
+      "url": "http://localhost:3000/admin/customers/maya/view",
+      "title": "ShareWiFiQR | Portal",
+      "type": "overview",
+      "persona": "admin",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-22T21:23:08.573Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-22T23:59:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-22T23:59:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/admin-customers-maya-view.json",
+      "prototypePath": "content/customer.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "admin-customers-maya",
+      "url": "http://localhost:3000/admin/customers/maya",
+      "title": "ShareWiFiQR | Portal",
+      "type": "account",
+      "persona": "admin",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-22T21:17:47.687Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-22T23:59:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-22T23:59:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/admin-customers-maya.json",
+      "prototypePath": "content/admin/customers/account.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "admin-help",
+      "url": "http://localhost:3000/admin/help",
+      "title": "ShareWiFiQR | Portal",
+      "type": "content",
+      "persona": "admin",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-22T21:18:32.588Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-22T23:59:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-22T23:59:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/admin-help.json",
+      "prototypePath": "content/admin/help.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "admin-profile",
+      "url": "http://localhost:3000/admin/profile",
+      "title": "ShareWiFiQR | Portal",
+      "type": "profile",
+      "persona": "admin",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-22T21:18:24.036Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-22T23:59:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-22T23:59:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/admin-profile.json",
+      "prototypePath": "content/admin/profile.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "admin-sign-in",
+      "url": "http://localhost:3000/admin/sign-in",
+      "title": "ShareWiFiQR | Portal",
+      "type": "sign-in",
+      "persona": "admin",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-22T21:18:32.936Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-22T23:59:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-22T23:59:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/admin-sign-in.json",
+      "prototypePath": "content/admin/sign-in.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "admin",
+      "url": "http://localhost:3000/admin",
+      "title": "ShareWiFiQR | Portal",
+      "type": "customers",
+      "persona": "admin",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-22T21:17:45.215Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-22T23:59:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-22T23:59:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/admin.json",
+      "prototypePath": "content/admin.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "customer-b2693d9c2124f3ca9547b897794ac6a1-billing",
+      "url": "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/billing",
+      "title": "ShareWiFiQR | Portal",
+      "type": "billing",
+      "persona": "customer",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-22T21:22:23.009Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-22T23:59:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-22T23:59:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/customer-b2693d9c2124f3ca9547b897794ac6a1-billing.json",
+      "prototypePath": "content/customer/billing.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "customer-b2693d9c2124f3ca9547b897794ac6a1-codes-studio-guest",
+      "url": "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/codes/studio-guest",
+      "title": "ShareWiFiQR | Portal",
+      "type": "code-detail",
+      "persona": "customer",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-22T21:21:43.541Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-22T23:59:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-22T23:59:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/customer-b2693d9c2124f3ca9547b897794ac6a1-codes-studio-guest.json",
+      "prototypePath": "content/customer/codes/detail.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "customer-b2693d9c2124f3ca9547b897794ac6a1-codes",
+      "url": "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/codes",
+      "title": "ShareWiFiQR | Portal",
+      "type": "codes",
+      "persona": "customer",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-22T21:15:44.368Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-22T23:59:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-22T23:59:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/customer-b2693d9c2124f3ca9547b897794ac6a1-codes.json",
+      "prototypePath": "content/customer/codes.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "customer-b2693d9c2124f3ca9547b897794ac6a1-help",
+      "url": "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/help",
+      "title": "ShareWiFiQR | Portal",
+      "type": "content",
+      "persona": "customer",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-22T21:16:41.426Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-22T23:59:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-22T23:59:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/customer-b2693d9c2124f3ca9547b897794ac6a1-help.json",
+      "prototypePath": "content/customer/help.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "customer-b2693d9c2124f3ca9547b897794ac6a1-privacy",
+      "url": "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/privacy",
+      "title": "ShareWiFiQR | Portal",
+      "type": "content",
+      "persona": "customer",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-22T21:17:30.187Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-22T23:59:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-22T23:59:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/customer-b2693d9c2124f3ca9547b897794ac6a1-privacy.json",
+      "prototypePath": "content/customer/help.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "customer-b2693d9c2124f3ca9547b897794ac6a1-profile",
+      "url": "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/profile",
+      "title": "ShareWiFiQR | Portal",
+      "type": "profile",
+      "persona": "customer",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-22T21:16:49.540Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-22T23:59:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-22T23:59:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/customer-b2693d9c2124f3ca9547b897794ac6a1-profile.json",
+      "prototypePath": "content/customer/profile.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "customer-b2693d9c2124f3ca9547b897794ac6a1-terms",
+      "url": "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/terms",
+      "title": "ShareWiFiQR | Portal",
+      "type": "content",
+      "persona": "customer",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-22T21:16:39.421Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-22T23:59:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-22T23:59:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/customer-b2693d9c2124f3ca9547b897794ac6a1-terms.json",
+      "prototypePath": "content/customer/help.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "customer-b2693d9c2124f3ca9547b897794ac6a1",
+      "url": "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1",
+      "title": "ShareWiFiQR | Portal",
+      "type": "overview",
+      "persona": "customer",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-22T21:19:54.467Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-22T23:59:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-22T23:59:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/customer-b2693d9c2124f3ca9547b897794ac6a1.json",
+      "prototypePath": "content/customer.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "customer-sign-in",
+      "url": "http://localhost:3000/customer/sign-in",
+      "title": "ShareWiFiQR | Portal",
+      "type": "sign-in",
+      "persona": "customer",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-22T21:17:35.276Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-22T23:59:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-22T23:59:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/customer-sign-in.json",
+      "prototypePath": "content/customer/sign-in.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "customer",
+      "url": "http://localhost:3000/customer",
+      "title": "ShareWiFiQR | Portal",
+      "type": "overview",
+      "persona": "customer",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-22T21:20:39.745Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-22T23:59:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-22T23:59:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/customer.json",
+      "prototypePath": "content/customer.html",
+      "migratedPath": null
+    }
+  ],
+  "flow": "replica",
+  "flowChosenAt": "2026-11-22T21:40:00Z",
+  "flowSource": "user-phrase"
+}

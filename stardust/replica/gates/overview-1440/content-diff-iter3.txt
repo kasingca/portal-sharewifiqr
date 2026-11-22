@@ -1,0 +1,26 @@
+
+Content diff @ 1440px (profile "generic", roots: main, header, footer)
+root "main"
+  source: 66 text nodes — 3 headings, 0 eyebrows, 3 CTAs, 60 body; 0 img
+  build: 68 text nodes — 3 headings, 0 eyebrows, 4 CTAs, 61 body; 0 img
+  editable texts (outermost h*/p/ul/ol): source 7 / build 7
+  attributes (placeholder/aria-label/title): source 1 / build 2; icons: source 13 / build 13
+root "header"
+  source: 6 text nodes — 0 headings, 0 eyebrows, 1 CTAs, 5 body; 0 img
+  build: 6 text nodes — 0 headings, 0 eyebrows, 1 CTAs, 5 body; 0 img
+  editable texts (outermost h*/p/ul/ol): source 0 / build 0
+  attributes (placeholder/aria-label/title): source 1 / build 1; icons: source 4 / build 4
+root "footer"
+  source: 3 text nodes — 0 headings, 0 eyebrows, 0 CTAs, 3 body; 0 img
+  build: 3 text nodes — 0 headings, 0 eyebrows, 2 CTAs, 1 body; 0 img
+  editable texts (outermost h*/p/ul/ol): source 0 / build 0
+  attributes (placeholder/aria-label/title): source 0 / build 0; icons: source 0 / build 0
+
+Findings: 3 (0 structural 🔴)
+Tiers: looks-same 🔴 0 · nothing-lost 🟡 0 · accepted 🟢 3 (owner 3, auto 0) · advisory 3
+  🟡 EXTRA [main]: build body "From date" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "To date" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA ARIA-LABEL [main]: build <div> aria-label="Scan date range" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟢 ROLE SWAP [main] accepted (stardust/replica/accepted.json): R-04: navigation rendered as a link (<a href>) instead of a JS <button>; same look
+  🟢 ROLE SWAP [footer] accepted (stardust/replica/accepted.json): R-04: authored footer link instead of a JS <button>; same look
+  🟢 ROLE SWAP [footer] accepted (stardust/replica/accepted.json): R-04: authored footer link instead of a JS <button>; same look

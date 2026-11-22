@@ -1,11 +1,83 @@
-# Your Project's Title...
-Your project's description...
+# ShareWiFiQR Portal
+
+The signed-in workspace for ShareWiFiQR (`portal.sharewifiqr.com`), built on AEM Edge Delivery Services and authored in da.live. The site is an **application shell**: every screen is a da.live document holding a few transactional blocks. Each block gets its data from one API module.
 
 ## Environments
 - Preview: https://main--portal-sharewifiqr--kasingca.aem.page/
 - Live: https://main--portal-sharewifiqr--kasingca.aem.live/
+- Production: https://portal.sharewifiqr.com/
 
-## Documentation
+## Screens
+
+| Persona | Path | Blocks |
+|---|---|---|
+| customer | `/customer` | page-header, stats (overview), scan-activity, code-table (limit 3) |
+| customer | `/customer/codes` | page-header, code-table |
+| customer | `/customer/codes/detail?id=<code>` | page-header (back, `{name}`), code-detail, scan-activity (code) |
+| customer | `/customer/billing` | page-header, stats (billing), plan-options, payment-history |
+| customer | `/customer/profile` | page-header, profile-form, payment-method |
+| customer | `/customer/sign-in` | sign-in |
+| customer | `/customer/help`, `/terms`, `/privacy` | authored default content (section style `content-card`) |
+| admin | `/admin` | page-header, stats (customers), customer-directory |
+| admin | `/admin/customers/account?id=<customer>` | page-header (back, `{name}`), stats (account), payment-history |
+| admin | `/admin/profile` | page-header, profile-form |
+| admin | `/admin/sign-in`, `/admin/help`, `/terms`, `/privacy` | as above |
+| admin → customer | `/customer?as=<customer>` (any customer screen) | the customer screens, with the "Viewing as" banner |
+
+Record IDs are query parameters (`?id=`, `?as=`, `?customer=`). EDS serves one document per path, and folder mapping is deprecated. `scripts/app/route.js` also reads the old path-style IDs (`/customer/<id>/codes/<code>`), so a CDN rewrite on the production host can keep those URLs.
+
+## Blocks
+
+Each block is configured with `key | value` rows. None of them carries data.
+
+| Block | Config rows |
+|---|---|
+| `page-header` | `title`, `description` (both accept `{tokens}` from the screen's record), `action \| create-code\|edit-code\|manage-payment\|view-as-customer [\| label]`, `back \| codes\|customers` |
+| `stats` | `source \| overview\|customers\|account\|billing` |
+| `scan-activity` | `scope \| workspace\|code` |
+| `code-table` | `heading`, `description`, `limit`, `view-all` |
+| `code-detail` | (none) |
+| `plan-options` | `heading`, `description`, `popular \| <plan id>` |
+| `payment-history` | `heading`, `description` |
+| `profile-form` | `heading` |
+| `payment-method` | `heading`, `description` |
+| `customer-directory` | `heading`, `description` |
+| `sign-in` | `title`, `description`, `button`, `icon` |
+| `header` | reads `/<persona>/nav`: one `sidebar` block with rows `brand \| url`, `group \| LABEL`, `<screen> \| label \| lucide-icon`, `signed-out \| label \| icon` |
+| `footer` | reads `/<persona>/footer`: one paragraph and the legal links |
+
+## App configuration: root metadata
+
+App configuration lives in the root **bulk metadata** sheet (`/metadata`, see `content/metadata.json`), not in pages. Pages carry only `title`, `description`, `screen`, `breadcrumb` (and `signed-out` on sign-in).
+
+| Key | Values | Purpose |
+|---|---|---|
+| `api-mode` | `mock` \| `live` | `mock` = in-browser demo data (today); `live` = REST calls |
+| `api-base` | `https://api.sharewifiqr.com` | REST origin for `live`, also used in QR scan links |
+| `demo-mode` | `true` \| `false` | shows the "Demo mode" pill |
+| `persona` | `customer` \| `admin` | workspace of the path (falls back to the first path segment) |
+| `nav`, `footer` | `/customer/nav`, `/customer/footer`… | shell fragments |
+
+## API: going live
+
+`scripts/app/api.js` is the only data boundary. Each function documents its REST route (for example `GET /customers/{customer}/codes` or `POST /customers/{customer}/billing/plan-changes`). To move a call to `api.sharewifiqr.com`, implement the route and set `api-mode` to `live`. Blocks don't change. `scripts/app/mock.js` holds the demo seed data and rules.
+
+## Local development
+
+```sh
+npm i
+npx -y @adobe/aem-cli up   # serves ./content/ (the da.live documents) and local code
+```
+
+`./content/` holds the da.live source of every screen. Push it with `aem content add …`, then `aem content commit` and `aem content push`, then preview. `content/` and `stardust/` are excluded from code delivery in `.hlxignore`.
+
+## Linting
+
+```sh
+npm run lint
+```
+
+## Boilerplate documentation
 
 Before using the aem-boilerplate, we recommend you to go through the documentation on https://www.aem.live/docs/ and more specifically:
 1. [Developer Tutorial](https://www.aem.live/developer/tutorial)

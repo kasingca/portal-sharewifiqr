@@ -1,0 +1,329 @@
+{
+ "url": "http://localhost:3001/customer/codes",
+ "at": "2026-11-22T22:36:39.626Z",
+ "width": 360,
+ "status": 200,
+ "settlePasses": 2,
+ "docH": 900,
+ "pageW": 360,
+ "counts": {
+  "textClipped": 0,
+  "textHidden": 0,
+  "controlHidden": 0,
+  "controlClipped": 0,
+  "clamped": 0,
+  "collapsed": 0,
+  "scrollHidden": 0,
+  "horizontal": 5,
+  "offPage": 17,
+  "textNodes": 40,
+  "controls": 16,
+  "total": 0
+ },
+ "findings": [
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "cut": 8,
+   "path": "div.header.block > div.topbar > div.breadcrumbs > strong",
+   "text": "wi-fi qr codes",
+   "clipper": "strong",
+   "rect": {
+    "l": 90,
+    "t": 20,
+    "r": 195,
+    "b": 37,
+    "w": 105,
+    "h": 17
+   },
+   "clip": {
+    "l": 90,
+    "t": 20,
+    "r": 187,
+    "b": 37,
+    "w": 97,
+    "h": 17
+   },
+   "lines": 2
+  },
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "cut": 59,
+   "path": "table > thead > tr > th",
+   "text": "total scans",
+   "clipper": "div.table-scroll",
+   "rect": {
+    "l": 340,
+    "t": 237,
+    "r": 404,
+    "b": 250,
+    "w": 63,
+    "h": 13
+   },
+   "clip": {
+    "l": 15,
+    "t": 224,
+    "r": 345,
+    "b": 442,
+    "w": 330,
+    "h": 218
+   },
+   "lines": 1
+  },
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "cut": 21,
+   "path": "table > tbody > tr > td.numeric",
+   "text": "720",
+   "clipper": "div.table-scroll",
+   "rect": {
+    "l": 340,
+    "t": 285,
+    "r": 366,
+    "b": 301,
+    "w": 26,
+    "h": 16
+   },
+   "clip": {
+    "l": 15,
+    "t": 224,
+    "r": 345,
+    "b": 442,
+    "w": 330,
+    "h": 218
+   },
+   "lines": 1
+  },
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "cut": 21,
+   "path": "table > tbody > tr > td.numeric",
+   "text": "294",
+   "clipper": "div.table-scroll",
+   "rect": {
+    "l": 340,
+    "t": 345,
+    "r": 366,
+    "b": 361,
+    "w": 26,
+    "h": 16
+   },
+   "clip": {
+    "l": 15,
+    "t": 224,
+    "r": 345,
+    "b": 442,
+    "w": 330,
+    "h": 218
+   },
+   "lines": 1
+  },
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "cut": 21,
+   "path": "table > tbody > tr > td.numeric",
+   "text": "259",
+   "clipper": "div.table-scroll",
+   "rect": {
+    "l": 340,
+    "t": 405,
+    "r": 366,
+    "b": 421,
+    "w": 26,
+    "h": 16
+   },
+   "clip": {
+    "l": 15,
+    "t": 224,
+    "r": 345,
+    "b": 442,
+    "w": 330,
+    "h": 218
+   },
+   "lines": 1
+  }
+ ],
+ "textBoxes": [
+  {
+   "x": 47,
+   "y": 20,
+   "w": 38,
+   "h": 17
+  },
+  {
+   "x": 90,
+   "y": 20,
+   "w": 105,
+   "h": 17
+  },
+  {
+   "x": 90,
+   "y": 20,
+   "w": 80,
+   "h": 17
+  },
+  {
+   "x": 14,
+   "y": 80,
+   "w": 190,
+   "h": 34
+  },
+  {
+   "x": 14,
+   "y": 123,
+   "w": 268,
+   "h": 17
+  },
+  {
+   "x": 55,
+   "y": 171,
+   "w": 107,
+   "h": 17
+  },
+  {
+   "x": 36,
+   "y": 237,
+   "w": 47,
+   "h": 13
+  },
+  {
+   "x": 237,
+   "y": 237,
+   "w": 47,
+   "h": 13
+  },
+  {
+   "x": 340,
+   "y": 237,
+   "w": 63,
+   "h": 13
+  },
+  {
+   "x": 82,
+   "y": 276,
+   "w": 121,
+   "h": 16
+  },
+  {
+   "x": 82,
+   "y": 295,
+   "w": 76,
+   "h": 15
+  },
+  {
+   "x": 237,
+   "y": 285,
+   "w": 69,
+   "h": 16
+  },
+  {
+   "x": 340,
+   "y": 285,
+   "w": 26,
+   "h": 16
+  },
+  {
+   "x": 82,
+   "y": 336,
+   "w": 96,
+   "h": 16
+  },
+  {
+   "x": 82,
+   "y": 355,
+   "w": 70,
+   "h": 15
+  },
+  {
+   "x": 237,
+   "y": 345,
+   "w": 69,
+   "h": 16
+  },
+  {
+   "x": 340,
+   "y": 345,
+   "w": 26,
+   "h": 16
+  },
+  {
+   "x": 82,
+   "y": 396,
+   "w": 97,
+   "h": 16
+  },
+  {
+   "x": 82,
+   "y": 415,
+   "w": 70,
+   "h": 15
+  },
+  {
+   "x": 237,
+   "y": 405,
+   "w": 33,
+   "h": 16
+  },
+  {
+   "x": 340,
+   "y": 405,
+   "w": 26,
+   "h": 16
+  },
+  {
+   "x": 14,
+   "y": 483,
+   "w": 110,
+   "h": 15
+  },
+  {
+   "x": 178,
+   "y": 483,
+   "w": 109,
+   "h": 15
+  },
+  {
+   "x": 305,
+   "y": 483,
+   "w": 41,
+   "h": 15
+  }
+ ],
+ "groups": [
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "n": 3,
+   "clipper": "div.table-scroll",
+   "path": "table > tbody > tr > td.numeric",
+   "text": "720",
+   "cutMin": 21,
+   "cutMax": 21
+  },
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "n": 1,
+   "clipper": "strong",
+   "path": "div.header.block > div.topbar > div.breadcrumbs > strong",
+   "text": "wi-fi qr codes",
+   "cutMin": 8,
+   "cutMax": 8
+  },
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "n": 1,
+   "clipper": "div.table-scroll",
+   "path": "table > thead > tr > th",
+   "text": "total scans",
+   "cutMin": 59,
+   "cutMax": 59
+  }
+ ],
+ "tier": "chrome"
+}

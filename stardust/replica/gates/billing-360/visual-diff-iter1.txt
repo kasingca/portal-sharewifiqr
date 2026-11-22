@@ -1,0 +1,190 @@
+
+Visual diff @ 360px (profile "generic") — screenshots in stardust/replica/gates/billing-360/vdiff-iter1/
+
+build red flags (advisory): none
+
+Full metrics JSON (compare source vs build: heading colors, eyebrow colors, image dims, full-bleed):
+{
+ "source": {
+  "viewport": 360,
+  "blankRender": false,
+  "mainHeight": 2975,
+  "textLen": 1908,
+  "images": [],
+  "headings": [
+   {
+    "tag": "h1",
+    "text": "Billing",
+    "color": "rgb(33, 29, 53)",
+    "fontSize": "29px",
+    "family": "system-ui",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Plans and pricing",
+    "color": "rgb(33, 29, 53)",
+    "fontSize": "17px",
+    "family": "system-ui",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Free",
+    "color": "rgb(33, 29, 53)",
+    "fontSize": "16.38px",
+    "family": "system-ui",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Plus",
+    "color": "rgb(33, 29, 53)",
+    "fontSize": "16.38px",
+    "family": "system-ui",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Business",
+    "color": "rgb(33, 29, 53)",
+    "fontSize": "16.38px",
+    "family": "system-ui",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Payment history",
+    "color": "rgb(33, 29, 53)",
+    "fontSize": "17px",
+    "family": "system-ui",
+    "fontLoaded": true
+   }
+  ],
+  "eyebrows": [],
+  "flushText": [],
+  "contentBoxes": [
+   {
+    "sel": "page-heading",
+    "width": 332,
+    "left": 14
+   },
+   {
+    "sel": "card-heading",
+    "width": 288,
+    "left": 36
+   },
+   {
+    "sel": "plan-option",
+    "width": 288,
+    "left": 36
+   },
+   {
+    "sel": "plan-option",
+    "width": 288,
+    "left": 36
+   },
+   {
+    "sel": "plan-option",
+    "width": 288,
+    "left": 36
+   },
+   {
+    "sel": "card-heading",
+    "width": 330,
+    "left": 15
+   }
+  ]
+ },
+ "build": {
+  "viewport": 360,
+  "blankRender": false,
+  "mainHeight": 2968,
+  "textLen": 1908,
+  "images": [],
+  "headings": [
+   {
+    "tag": "h1",
+    "text": "Billing",
+    "color": "rgb(33, 29, 53)",
+    "fontSize": "29px",
+    "family": "system-ui",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Plans and pricing",
+    "color": "rgb(33, 29, 53)",
+    "fontSize": "17px",
+    "family": "system-ui",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Free",
+    "color": "rgb(33, 29, 53)",
+    "fontSize": "16.38px",
+    "family": "system-ui",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Plus",
+    "color": "rgb(33, 29, 53)",
+    "fontSize": "16.38px",
+    "family": "system-ui",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Business",
+    "color": "rgb(33, 29, 53)",
+    "fontSize": "16.38px",
+    "family": "system-ui",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Payment history",
+    "color": "rgb(33, 29, 53)",
+    "fontSize": "17px",
+    "family": "system-ui",
+    "fontLoaded": true
+   }
+  ],
+  "eyebrows": [],
+  "flushText": [],
+  "contentBoxes": [
+   {
+    "sel": "page-heading",
+    "width": 332,
+    "left": 14
+   },
+   {
+    "sel": "card-heading",
+    "width": 288,
+    "left": 36
+   },
+   {
+    "sel": "plan-option",
+    "width": 288,
+    "left": 36
+   },
+   {
+    "sel": "plan-option",
+    "width": 288,
+    "left": 36
+   },
+   {
+    "sel": "plan-option",
+    "width": 288,
+    "left": 36
+   },
+   {
+    "sel": "card-heading",
+    "width": 330,
+    "left": 15
+   }
+  ]
+ }
+}

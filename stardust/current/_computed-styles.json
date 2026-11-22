@@ -1,0 +1,1571 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-11-22T21:07:39.762Z",
+    "script": "style-census.mjs",
+    "readArtifacts": [
+      "http://localhost:3000/"
+    ],
+    "widths": [
+      1440
+    ],
+    "userAgent": "browser-default",
+    "synthesizedInputs": [],
+    "failed": []
+  },
+  "pages": {
+    "http://localhost:3000/": {
+      "1440": {
+        "title": "ShareWiFiQR | Portal",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "elements": {
+          "total": 300,
+          "visible": 171
+        },
+        "occluders": [],
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Overview",
+            "selector": "main > div:nth-of-type(1) > div > h1",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "37px",
+            "fontWeight": "700",
+            "lineHeight": "42.55px",
+            "letterSpacing": "-1.665px",
+            "textTransform": "none",
+            "color": "rgb(33, 29, 53)"
+          },
+          {
+            "tag": "h2",
+            "text": "Scan activity",
+            "selector": "main > section:nth-of-type(1) > div:nth-of-type(1) > div > h2",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "17px",
+            "fontWeight": "700",
+            "lineHeight": "22.95px",
+            "letterSpacing": "-0.425px",
+            "textTransform": "none",
+            "color": "rgb(33, 29, 53)"
+          },
+          {
+            "tag": "h2",
+            "text": "Your Wi-Fi QR codes",
+            "selector": "main > section:nth-of-type(2) > div:nth-of-type(1) > div > h2",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "17px",
+            "fontWeight": "700",
+            "lineHeight": "22.95px",
+            "letterSpacing": "-0.425px",
+            "textTransform": "none",
+            "color": "rgb(33, 29, 53)"
+          }
+        ],
+        "text": [
+          {
+            "tag": "p",
+            "text": "Manage your Wi-Fi QR codes and see how …",
+            "selector": "main > div:nth-of-type(1) > div > p",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21.7px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(109, 106, 128)"
+          },
+          {
+            "tag": "p",
+            "text": "How often guests opened your Wi-Fi links",
+            "selector": "main > section:nth-of-type(1) > div:nth-of-type(1) > div > p",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "13px",
+            "fontWeight": "400",
+            "lineHeight": "20.15px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(109, 106, 128)"
+          },
+          {
+            "tag": "p",
+            "text": "Sep 28 – Nov 22, 2026 · Demo activity t…",
+            "selector": "main > section:nth-of-type(1) > p",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "18.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(109, 106, 128)"
+          },
+          {
+            "tag": "p",
+            "text": "Open a code to manage it or see its act…",
+            "selector": "main > section:nth-of-type(2) > div:nth-of-type(1) > div > p",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "13px",
+            "fontWeight": "400",
+            "lineHeight": "20.15px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(109, 106, 128)"
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Overview",
+            "selector": "nav > a:nth-of-type(1)",
+            "count": 1,
+            "backgroundColor": "rgb(239, 235, 255)",
+            "color": "rgb(89, 64, 203)",
+            "borderRadius": "9px",
+            "padding": "11px 12px",
+            "border": "0px none rgb(89, 64, 203)",
+            "borderColor": "rgb(89, 64, 203)",
+            "boxShadow": "none",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "hover": null
+          },
+          {
+            "text": "Create QR code",
+            "selector": "main > div:nth-of-type(1) > button",
+            "count": 1,
+            "backgroundColor": "rgb(101, 76, 224)",
+            "color": "rgb(255, 255, 255)",
+            "borderRadius": "8px",
+            "padding": "8px 13px",
+            "border": "1px solid rgb(101, 76, 224)",
+            "borderColor": "rgb(101, 76, 224)",
+            "boxShadow": "rgba(74, 51, 175, 0.137) 0px 2px 4px 0px",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "680",
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "hover": null
+          },
+          {
+            "text": "View all",
+            "selector": "main > section:nth-of-type(2) > div:nth-of-type(1) > button",
+            "count": 1,
+            "backgroundColor": "rgb(255, 255, 255)",
+            "color": "rgb(64, 57, 81)",
+            "borderRadius": "8px",
+            "padding": "8px 13px",
+            "border": "1px solid rgb(228, 225, 237)",
+            "borderColor": "rgb(228, 225, 237)",
+            "boxShadow": "none",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "680",
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "hover": null
+          }
+        ],
+        "links": [
+          {
+            "text": "Studio Guest Wi-Fi",
+            "selector": "div:nth-of-type(2) > table > tbody > tr:nth-of-type(1) > td:nth-of-type(1) > div > div > a",
+            "count": 3,
+            "color": "rgb(33, 29, 53)",
+            "textDecoration": "none",
+            "fontWeight": "700",
+            "hover": null
+          }
+        ],
+        "surfaces": [
+          {
+            "matched": "header",
+            "selector": "header",
+            "rect": {
+              "x": 238,
+              "y": 0,
+              "w": 1202,
+              "h": 68
+            },
+            "backgroundColor": "rgb(255, 255, 255)",
+            "color": "rgb(33, 29, 53)",
+            "padding": "0px 48px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px"
+          },
+          {
+            "matched": "nav",
+            "selector": "nav",
+            "rect": {
+              "x": 17,
+              "y": 109,
+              "w": 203,
+              "h": 308
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(33, 29, 53)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px"
+          },
+          {
+            "matched": "main",
+            "selector": "main",
+            "rect": {
+              "x": 238,
+              "y": 68,
+              "w": 1202,
+              "h": 977
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(33, 29, 53)",
+            "padding": "35px 48px 30px",
+            "maxWidth": "1320px",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px"
+          },
+          {
+            "matched": "footer",
+            "selector": "footer",
+            "rect": {
+              "x": 286,
+              "y": 1045,
+              "w": 1106,
+              "h": 51
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(109, 106, 128)",
+            "padding": "16px 0px 19px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "12px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "main > div:nth-of-type(1)",
+            "rect": {
+              "x": 286,
+              "y": 103,
+              "w": 1106,
+              "h": 71
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(33, 29, 53)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "main > div:nth-of-type(2)",
+            "rect": {
+              "x": 286,
+              "y": 198,
+              "w": 1106,
+              "h": 159
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(33, 29, 53)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "main > section:nth-of-type(1)",
+            "rect": {
+              "x": 286,
+              "y": 373,
+              "w": 1106,
+              "h": 326
+            },
+            "backgroundColor": "rgb(255, 255, 255)",
+            "color": "rgb(33, 29, 53)",
+            "padding": "19px 21px 17px",
+            "maxWidth": "none",
+            "borderRadius": "13px",
+            "boxShadow": "rgba(39, 33, 75, 0.016) 0px 2px 4px 0px",
+            "position": "static",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "main > section:nth-of-type(2)",
+            "rect": {
+              "x": 286,
+              "y": 715,
+              "w": 1106,
+              "h": 300
+            },
+            "backgroundColor": "rgb(255, 255, 255)",
+            "color": "rgb(33, 29, 53)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "13px",
+            "boxShadow": "rgba(39, 33, 75, 0.016) 0px 2px 4px 0px",
+            "position": "static",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px"
+          }
+        ],
+        "radii": [
+          {
+            "value": "9px",
+            "count": 8,
+            "area": 47320,
+            "sources": [
+              "nav > a:nth-of-type(1)",
+              "nav > a:nth-of-type(2)",
+              "nav > a:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "13px",
+            "count": 5,
+            "area": 863475,
+            "sources": [
+              "main > div:nth-of-type(2) > div:nth-of-type(1)",
+              "main > div:nth-of-type(2) > div:nth-of-type(2)",
+              "main > div:nth-of-type(2) > div:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "8px",
+            "count": 5,
+            "area": 23953,
+            "sources": [
+              "body > div:nth-of-type(2) > aside > div > div > button",
+              "header > div:nth-of-type(2) > label",
+              "main > div:nth-of-type(1) > button"
+            ]
+          },
+          {
+            "value": "11px",
+            "count": 3,
+            "area": 4800,
+            "sources": [
+              "main > div:nth-of-type(2) > div:nth-of-type(1) > span",
+              "main > div:nth-of-type(2) > div:nth-of-type(2) > span",
+              "main > div:nth-of-type(2) > div:nth-of-type(3) > span"
+            ]
+          },
+          {
+            "value": "50%",
+            "count": 2,
+            "area": 1332,
+            "sources": [
+              "body > div:nth-of-type(2) > aside > div > div > span",
+              "header > div:nth-of-type(2) > span > i"
+            ]
+          },
+          {
+            "value": "99px",
+            "count": 1,
+            "area": 2404,
+            "sources": [
+              "header > div:nth-of-type(2) > span"
+            ]
+          },
+          {
+            "value": "12px",
+            "count": 1,
+            "area": 1444,
+            "sources": [
+              "body > div:nth-of-type(2) > aside > a > span:nth-of-type(1)"
+            ]
+          }
+        ],
+        "shadows": [
+          {
+            "value": "rgba(39, 33, 75, 0.016) 0px 2px 4px 0px",
+            "count": 5,
+            "sources": [
+              "main > div:nth-of-type(2) > div:nth-of-type(1)",
+              "main > div:nth-of-type(2) > div:nth-of-type(2)",
+              "main > div:nth-of-type(2) > div:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "rgba(112, 87, 232, 0.173) 0px 4px 9px 0px",
+            "count": 1,
+            "sources": [
+              "body > div:nth-of-type(2) > aside > a > span:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgba(74, 51, 175, 0.137) 0px 2px 4px 0px",
+            "count": 1,
+            "sources": [
+              "main > div:nth-of-type(1) > button"
+            ]
+          }
+        ],
+        "gradients": [
+          {
+            "value": "linear-gradient(145deg, rgb(138, 114, 255), rgb(96, 70, 223))",
+            "count": 1,
+            "area": 1444,
+            "sources": [
+              "body > div:nth-of-type(2) > aside > a > span:nth-of-type(1)"
+            ]
+          }
+        ],
+        "bgColors": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 10,
+            "area": 1176051,
+            "sources": [
+              "body > div:nth-of-type(2) > aside",
+              "header",
+              "header > div:nth-of-type(2) > label"
+            ]
+          },
+          {
+            "value": "rgb(250, 249, 253)",
+            "count": 5,
+            "area": 41953,
+            "sources": [
+              "main > section:nth-of-type(2) > div:nth-of-type(2) > table > thead > tr > th:nth-of-type(1)",
+              "main > section:nth-of-type(2) > div:nth-of-type(2) > table > thead > tr > th:nth-of-type(2)",
+              "main > section:nth-of-type(2) > div:nth-of-type(2) > table > thead > tr > th:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "rgb(238, 233, 255)",
+            "count": 3,
+            "area": 4121,
+            "sources": [
+              "body > div:nth-of-type(2) > aside > div > div > span",
+              "main > div:nth-of-type(2) > div:nth-of-type(1) > span",
+              "section:nth-of-type(2) > div:nth-of-type(2) > table > tbody > tr:nth-of-type(1) > td:nth-of-type(1) > div > span"
+            ]
+          },
+          {
+            "value": "rgb(232, 239, 255)",
+            "count": 2,
+            "area": 2825,
+            "sources": [
+              "main > div:nth-of-type(2) > div:nth-of-type(2) > span",
+              "section:nth-of-type(2) > div:nth-of-type(2) > table > tbody > tr:nth-of-type(2) > td:nth-of-type(1) > div > span"
+            ]
+          },
+          {
+            "value": "rgb(248, 248, 252)",
+            "count": 1,
+            "area": 1578623,
+            "sources": [
+              "body"
+            ]
+          },
+          {
+            "value": "rgb(239, 235, 255)",
+            "count": 1,
+            "area": 8729,
+            "sources": [
+              "nav > a:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(101, 76, 224)",
+            "count": 1,
+            "area": 6157,
+            "sources": [
+              "main > div:nth-of-type(1) > button"
+            ]
+          },
+          {
+            "value": "rgb(240, 236, 255)",
+            "count": 1,
+            "area": 2404,
+            "sources": [
+              "header > div:nth-of-type(2) > span"
+            ]
+          },
+          {
+            "value": "rgb(227, 246, 239)",
+            "count": 1,
+            "area": 1600,
+            "sources": [
+              "main > div:nth-of-type(2) > div:nth-of-type(3) > span"
+            ]
+          },
+          {
+            "value": "rgb(255, 240, 229)",
+            "count": 1,
+            "area": 1225,
+            "sources": [
+              "section:nth-of-type(2) > div:nth-of-type(2) > table > tbody > tr:nth-of-type(3) > td:nth-of-type(1) > div > span"
+            ]
+          },
+          {
+            "value": "rgb(93, 70, 196)",
+            "count": 1,
+            "area": 36,
+            "sources": [
+              "header > div:nth-of-type(2) > span > i"
+            ]
+          }
+        ],
+        "textColors": [
+          {
+            "value": "rgb(109, 106, 128)",
+            "count": 29,
+            "sources": [
+              "body > div:nth-of-type(2) > aside > div > div > div > small",
+              "header > div:nth-of-type(1) > a",
+              "main > div:nth-of-type(1) > div > p"
+            ]
+          },
+          {
+            "value": "rgb(33, 29, 53)",
+            "count": 16,
+            "sources": [
+              "body > div:nth-of-type(2) > aside > a > span:nth-of-type(2)",
+              "body > div:nth-of-type(2) > aside > div > div > div > strong",
+              "header > div:nth-of-type(1) > strong"
+            ]
+          },
+          {
+            "value": "rgb(97, 91, 115)",
+            "count": 6,
+            "sources": [
+              "main > section:nth-of-type(2) > div:nth-of-type(2) > table > tbody > tr:nth-of-type(1) > td:nth-of-type(2)",
+              "main > section:nth-of-type(2) > div:nth-of-type(2) > table > tbody > tr:nth-of-type(1) > td:nth-of-type(4)",
+              "main > section:nth-of-type(2) > div:nth-of-type(2) > table > tbody > tr:nth-of-type(2) > td:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgb(101, 95, 119)",
+            "count": 4,
+            "sources": [
+              "main > section:nth-of-type(2) > div:nth-of-type(2) > table > thead > tr > th:nth-of-type(1)",
+              "main > section:nth-of-type(2) > div:nth-of-type(2) > table > thead > tr > th:nth-of-type(2)",
+              "main > section:nth-of-type(2) > div:nth-of-type(2) > table > thead > tr > th:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "rgb(89, 86, 109)",
+            "count": 4,
+            "sources": [
+              "nav > a:nth-of-type(2)",
+              "nav > a:nth-of-type(3)",
+              "nav > a:nth-of-type(4)"
+            ]
+          },
+          {
+            "value": "rgb(89, 84, 109)",
+            "count": 3,
+            "sources": [
+              "main > div:nth-of-type(2) > div:nth-of-type(1) > div",
+              "main > div:nth-of-type(2) > div:nth-of-type(2) > div",
+              "main > div:nth-of-type(2) > div:nth-of-type(3) > div"
+            ]
+          },
+          {
+            "value": "rgb(118, 113, 135)",
+            "count": 2,
+            "sources": [
+              "nav > div:nth-of-type(1)",
+              "nav > div:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgb(101, 76, 224)",
+            "count": 1,
+            "sources": [
+              "body > div:nth-of-type(2) > aside > a > span:nth-of-type(2) > span"
+            ]
+          },
+          {
+            "value": "rgb(116, 112, 135)",
+            "count": 1,
+            "sources": [
+              "body > div:nth-of-type(2) > aside > a > span:nth-of-type(2) > small"
+            ]
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 1,
+            "sources": [
+              "main > div:nth-of-type(1) > button"
+            ]
+          },
+          {
+            "value": "rgb(64, 57, 81)",
+            "count": 1,
+            "sources": [
+              "main > section:nth-of-type(2) > div:nth-of-type(1) > button"
+            ]
+          },
+          {
+            "value": "rgb(89, 64, 203)",
+            "count": 1,
+            "sources": [
+              "nav > a:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(93, 70, 196)",
+            "count": 1,
+            "sources": [
+              "header > div:nth-of-type(2) > span"
+            ]
+          },
+          {
+            "value": "rgb(98, 71, 213)",
+            "count": 1,
+            "sources": [
+              "body > div:nth-of-type(2) > aside > div > div > span"
+            ]
+          }
+        ],
+        "borderColors": [
+          {
+            "value": "rgb(233, 231, 240)",
+            "count": 16,
+            "sources": [
+              "body > div:nth-of-type(2) > aside",
+              "body > div:nth-of-type(2) > aside > div",
+              "header"
+            ]
+          },
+          {
+            "value": "rgb(240, 238, 245)",
+            "count": 10,
+            "sources": [
+              "main > section:nth-of-type(2) > div:nth-of-type(2) > table > tbody > tr:nth-of-type(1) > td:nth-of-type(1)",
+              "main > section:nth-of-type(2) > div:nth-of-type(2) > table > tbody > tr:nth-of-type(1) > td:nth-of-type(2)",
+              "main > section:nth-of-type(2) > div:nth-of-type(2) > table > tbody > tr:nth-of-type(1) > td:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "rgb(101, 76, 224)",
+            "count": 1,
+            "sources": [
+              "main > div:nth-of-type(1) > button"
+            ]
+          },
+          {
+            "value": "rgb(228, 225, 237)",
+            "count": 1,
+            "sources": [
+              "main > section:nth-of-type(2) > div:nth-of-type(1) > button"
+            ]
+          }
+        ],
+        "customProps": {
+          "--ink": {
+            "declared": "#211d35",
+            "computed": "#211d35"
+          },
+          "--muted": {
+            "declared": "#6d6a80",
+            "computed": "#6d6a80"
+          },
+          "--border": {
+            "declared": "#e9e7f0",
+            "computed": "#e9e7f0"
+          },
+          "--canvas": {
+            "declared": "#f8f8fc",
+            "computed": "#f8f8fc"
+          },
+          "--purple": {
+            "declared": "#654ce0",
+            "computed": "#654ce0"
+          },
+          "--purple-dark": {
+            "declared": "#533dc4",
+            "computed": "#533dc4"
+          },
+          "--white": {
+            "declared": "#fff",
+            "computed": "#fff"
+          },
+          "--lightningcss-light": {
+            "declared": "initial",
+            "computed": ""
+          },
+          "--lightningcss-dark": {
+            "declared": "",
+            "computed": ""
+          }
+        },
+        "fonts": [
+          {
+            "family": "__nextjs-Geist",
+            "weight": "400 600",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "weight": "400 600",
+            "style": "normal",
+            "status": "unloaded"
+          }
+        ],
+        "logoCandidates": [
+          {
+            "tag": "svg",
+            "selector": "nav > a:nth-of-type(1) > svg",
+            "src": null,
+            "inlineSvg": true,
+            "hasText": false,
+            "viewBox": "0 0 24 24",
+            "ariaLabel": null,
+            "class": "lucide lucide-layout-dashboard",
+            "id": null,
+            "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1",
+            "inHomeLink": false,
+            "rect": {
+              "x": 29,
+              "y": 144,
+              "w": 18,
+              "h": 18
+            }
+          },
+          {
+            "tag": "svg",
+            "selector": "nav > a:nth-of-type(2) > svg",
+            "src": null,
+            "inlineSvg": true,
+            "hasText": false,
+            "viewBox": "0 0 24 24",
+            "ariaLabel": null,
+            "class": "lucide lucide-qr-code",
+            "id": null,
+            "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1/codes",
+            "inHomeLink": false,
+            "rect": {
+              "x": 29,
+              "y": 191,
+              "w": 18,
+              "h": 18
+            }
+          },
+          {
+            "tag": "svg",
+            "selector": "nav > a:nth-of-type(3) > svg",
+            "src": null,
+            "inlineSvg": true,
+            "hasText": false,
+            "viewBox": "0 0 24 24",
+            "ariaLabel": null,
+            "class": "lucide lucide-credit-card",
+            "id": null,
+            "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1/billing",
+            "inHomeLink": false,
+            "rect": {
+              "x": 29,
+              "y": 238,
+              "w": 18,
+              "h": 18
+            }
+          },
+          {
+            "tag": "svg",
+            "selector": "nav > a:nth-of-type(4) > svg",
+            "src": null,
+            "inlineSvg": true,
+            "hasText": false,
+            "viewBox": "0 0 24 24",
+            "ariaLabel": null,
+            "class": "lucide lucide-user-round",
+            "id": null,
+            "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1/profile",
+            "inHomeLink": false,
+            "rect": {
+              "x": 29,
+              "y": 285,
+              "w": 18,
+              "h": 18
+            }
+          },
+          {
+            "tag": "svg",
+            "selector": "nav > a:nth-of-type(5) > svg",
+            "src": null,
+            "inlineSvg": true,
+            "hasText": false,
+            "viewBox": "0 0 24 24",
+            "ariaLabel": null,
+            "class": "lucide lucide-circle-help",
+            "id": null,
+            "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1/help",
+            "inHomeLink": false,
+            "rect": {
+              "x": 29,
+              "y": 383,
+              "w": 18,
+              "h": 18
+            }
+          },
+          {
+            "tag": "svg",
+            "selector": "header > div:nth-of-type(1) > svg",
+            "src": null,
+            "inlineSvg": true,
+            "hasText": false,
+            "viewBox": "0 0 24 24",
+            "ariaLabel": null,
+            "class": "lucide lucide-chevron-right",
+            "id": null,
+            "href": null,
+            "inHomeLink": false,
+            "rect": {
+              "x": 333,
+              "y": 27,
+              "w": 14,
+              "h": 14
+            }
+          },
+          {
+            "tag": "svg",
+            "selector": "header > div:nth-of-type(2) > label > svg:nth-of-type(1)",
+            "src": null,
+            "inlineSvg": true,
+            "hasText": false,
+            "viewBox": "0 0 24 24",
+            "ariaLabel": null,
+            "class": "lucide lucide-user-round",
+            "id": null,
+            "href": null,
+            "inHomeLink": false,
+            "rect": {
+              "x": 1202,
+              "y": 25,
+              "w": 17,
+              "h": 17
+            }
+          },
+          {
+            "tag": "svg",
+            "selector": "header > div:nth-of-type(2) > label > svg:nth-of-type(2)",
+            "src": null,
+            "inlineSvg": true,
+            "hasText": false,
+            "viewBox": "0 0 24 24",
+            "ariaLabel": null,
+            "class": "lucide lucide-chevron-down",
+            "id": null,
+            "href": null,
+            "inHomeLink": false,
+            "rect": {
+              "x": 1366,
+              "y": 26,
+              "w": 15,
+              "h": 15
+            }
+          }
+        ],
+        "iconFont": null,
+        "consent": {
+          "dismissed": null
+        },
+        "finalUrl": "http://localhost:3000/"
+      }
+    }
+  },
+  "aggregate": {
+    "counts": {
+      "pages": 1,
+      "widths": [
+        1440
+      ],
+      "measurements": 1
+    },
+    "colors": [
+      {
+        "hex": "#6d6a80",
+        "values": [
+          "rgb(109, 106, 128)",
+          "rgb(101, 95, 119)",
+          "rgb(118, 113, 135)",
+          "rgb(116, 112, 135)"
+        ],
+        "weight": 36,
+        "by": {
+          "text": 36
+        },
+        "roles": [
+          "text"
+        ],
+        "sources": [
+          {
+            "url": "http://localhost:3000/",
+            "selector": "body > div:nth-of-type(2) > aside > div > div > div > small",
+            "prop": "text"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > section:nth-of-type(2) > div:nth-of-type(2) > table > thead > tr > th:nth-of-type(1)",
+            "prop": "text"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "nav > div:nth-of-type(1)",
+            "prop": "text"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "body > div:nth-of-type(2) > aside > a > span:nth-of-type(2) > small",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#e9e7f0",
+        "values": [
+          "rgb(233, 231, 240)",
+          "rgb(240, 238, 245)",
+          "rgb(228, 225, 237)"
+        ],
+        "weight": 28,
+        "by": {
+          "border": 27,
+          "button-border": 1
+        },
+        "roles": [
+          "border"
+        ],
+        "sources": [
+          {
+            "url": "http://localhost:3000/",
+            "selector": "body > div:nth-of-type(2) > aside",
+            "prop": "border"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > section:nth-of-type(2) > div:nth-of-type(2) > table > tbody > tr:nth-of-type(1) > td:nth-of-type(1)",
+            "prop": "border"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > section:nth-of-type(2) > div:nth-of-type(1) > button",
+            "prop": "border"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > section:nth-of-type(2) > div:nth-of-type(1) > button",
+            "prop": "button-border"
+          }
+        ]
+      },
+      {
+        "hex": "#211d35",
+        "values": [
+          "rgb(33, 29, 53)"
+        ],
+        "weight": 22,
+        "by": {
+          "text": 16,
+          "link": 3,
+          "heading": 3
+        },
+        "roles": [
+          "accent",
+          "heading"
+        ],
+        "sources": [
+          {
+            "url": "http://localhost:3000/",
+            "selector": "body > div:nth-of-type(2) > aside > a > span:nth-of-type(2)",
+            "prop": "text"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "div:nth-of-type(2) > table > tbody > tr:nth-of-type(1) > td:nth-of-type(1) > div > div > a",
+            "prop": "link"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > div:nth-of-type(1) > div > h1",
+            "prop": "heading"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > section:nth-of-type(1) > div:nth-of-type(1) > div > h2",
+            "prop": "heading"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > section:nth-of-type(2) > div:nth-of-type(1) > div > h2",
+            "prop": "heading"
+          }
+        ]
+      },
+      {
+        "hex": "#ffffff",
+        "values": [
+          "rgb(255, 255, 255)",
+          "rgb(250, 249, 253)",
+          "rgb(248, 248, 252)"
+        ],
+        "weight": 19,
+        "bgArea": 2796627,
+        "by": {
+          "background": 16,
+          "button-background": 1,
+          "button-text": 1,
+          "text": 1
+        },
+        "roles": [
+          "background"
+        ],
+        "sources": [
+          {
+            "url": "http://localhost:3000/",
+            "selector": "body > div:nth-of-type(2) > aside",
+            "prop": "background"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > section:nth-of-type(2) > div:nth-of-type(2) > table > thead > tr > th:nth-of-type(1)",
+            "prop": "background"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "body",
+            "prop": "background"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > section:nth-of-type(2) > div:nth-of-type(1) > button",
+            "prop": "button-background"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > div:nth-of-type(1) > button",
+            "prop": "button-text"
+          }
+        ]
+      },
+      {
+        "hex": "#eee9ff",
+        "values": [
+          "rgb(238, 233, 255)",
+          "rgb(232, 239, 255)",
+          "rgb(239, 235, 255)",
+          "rgb(240, 236, 255)"
+        ],
+        "weight": 8,
+        "bgArea": 18079,
+        "by": {
+          "background": 7,
+          "button-background": 1
+        },
+        "roles": [
+          "surface",
+          "primary"
+        ],
+        "sources": [
+          {
+            "url": "http://localhost:3000/",
+            "selector": "body > div:nth-of-type(2) > aside > div > div > span",
+            "prop": "background"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > div:nth-of-type(2) > div:nth-of-type(2) > span",
+            "prop": "background"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "nav > a:nth-of-type(1)",
+            "prop": "background"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "header > div:nth-of-type(2) > span",
+            "prop": "background"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "nav > a:nth-of-type(1)",
+            "prop": "button-background"
+          }
+        ]
+      },
+      {
+        "hex": "#654ce0",
+        "values": [
+          "rgb(101, 76, 224)",
+          "rgb(98, 71, 213)"
+        ],
+        "weight": 6,
+        "bgArea": 6157,
+        "by": {
+          "background": 1,
+          "border": 1,
+          "button-background": 1,
+          "button-border": 1,
+          "text": 2
+        },
+        "roles": [
+          "secondary"
+        ],
+        "sources": [
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > div:nth-of-type(1) > button",
+            "prop": "background"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > div:nth-of-type(1) > button",
+            "prop": "border"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > div:nth-of-type(1) > button",
+            "prop": "button-background"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > div:nth-of-type(1) > button",
+            "prop": "button-border"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "body > div:nth-of-type(2) > aside > a > span:nth-of-type(2) > span",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#615b73",
+        "values": [
+          "rgb(97, 91, 115)",
+          "rgb(89, 86, 109)",
+          "rgb(89, 84, 109)"
+        ],
+        "weight": 13,
+        "by": {
+          "text": 13
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > section:nth-of-type(2) > div:nth-of-type(2) > table > tbody > tr:nth-of-type(1) > td:nth-of-type(2)",
+            "prop": "text"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "nav > a:nth-of-type(2)",
+            "prop": "text"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > div:nth-of-type(2) > div:nth-of-type(1) > div",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#5d46c4",
+        "values": [
+          "rgb(93, 70, 196)",
+          "rgb(89, 64, 203)"
+        ],
+        "weight": 4,
+        "bgArea": 36,
+        "by": {
+          "background": 1,
+          "button-text": 1,
+          "text": 2
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "http://localhost:3000/",
+            "selector": "header > div:nth-of-type(2) > span > i",
+            "prop": "background"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "nav > a:nth-of-type(1)",
+            "prop": "button-text"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "nav > a:nth-of-type(1)",
+            "prop": "text"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "header > div:nth-of-type(2) > span",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#403951",
+        "values": [
+          "rgb(64, 57, 81)"
+        ],
+        "weight": 2,
+        "by": {
+          "button-text": 1,
+          "text": 1
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > section:nth-of-type(2) > div:nth-of-type(1) > button",
+            "prop": "button-text"
+          },
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > section:nth-of-type(2) > div:nth-of-type(1) > button",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#e3f6ef",
+        "values": [
+          "rgb(227, 246, 239)"
+        ],
+        "weight": 1,
+        "bgArea": 1600,
+        "by": {
+          "background": 1
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "http://localhost:3000/",
+            "selector": "main > div:nth-of-type(2) > div:nth-of-type(3) > span",
+            "prop": "background"
+          }
+        ]
+      },
+      {
+        "hex": "#fff0e5",
+        "values": [
+          "rgb(255, 240, 229)"
+        ],
+        "weight": 1,
+        "bgArea": 1225,
+        "by": {
+          "background": 1
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "http://localhost:3000/",
+            "selector": "section:nth-of-type(2) > div:nth-of-type(2) > table > tbody > tr:nth-of-type(3) > td:nth-of-type(1) > div > span",
+            "prop": "background"
+          }
+        ]
+      }
+    ],
+    "type": {
+      "families": [
+        {
+          "family": "Inter",
+          "count": 10,
+          "headings": 3,
+          "text": 4,
+          "buttons": 3
+        }
+      ],
+      "headingFamily": "Inter",
+      "bodyFamily": "Inter",
+      "sizes": [
+        {
+          "px": 37,
+          "count": 1,
+          "headings": 1,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 17,
+          "count": 2,
+          "headings": 2,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 14,
+          "count": 4,
+          "headings": 0,
+          "text": 1,
+          "buttons": 3
+        },
+        {
+          "px": 13,
+          "count": 2,
+          "headings": 0,
+          "text": 2,
+          "buttons": 0
+        },
+        {
+          "px": 12,
+          "count": 1,
+          "headings": 0,
+          "text": 1,
+          "buttons": 0
+        }
+      ],
+      "weights": [
+        {
+          "weight": "400",
+          "count": 4,
+          "headings": 0,
+          "text": 4,
+          "buttons": 0
+        },
+        {
+          "weight": "700",
+          "count": 3,
+          "headings": 3,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "weight": "680",
+          "count": 2,
+          "headings": 0,
+          "text": 0,
+          "buttons": 2
+        },
+        {
+          "weight": "600",
+          "count": 1,
+          "headings": 0,
+          "text": 0,
+          "buttons": 1
+        }
+      ],
+      "levels": {
+        "h1": {
+          "fontSize": 37,
+          "fontWeight": "700",
+          "count": 1,
+          "score": 64.75
+        },
+        "h2": {
+          "fontSize": 17,
+          "fontWeight": "700",
+          "count": 2,
+          "score": 42.07
+        }
+      }
+    },
+    "motifs": {
+      "radius": {
+        "mode": "9px",
+        "areaMode": "13px",
+        "pill": "50%",
+        "values": [
+          {
+            "value": "9px",
+            "count": 8,
+            "area": 47320,
+            "sources": [
+              {
+                "url": "http://localhost:3000/",
+                "selector": "nav > a:nth-of-type(1)"
+              },
+              {
+                "url": "http://localhost:3000/",
+                "selector": "nav > a:nth-of-type(2)"
+              },
+              {
+                "url": "http://localhost:3000/",
+                "selector": "nav > a:nth-of-type(3)"
+              }
+            ]
+          },
+          {
+            "value": "13px",
+            "count": 5,
+            "area": 863475,
+            "sources": [
+              {
+                "url": "http://localhost:3000/",
+                "selector": "main > div:nth-of-type(2) > div:nth-of-type(1)"
+              },
+              {
+                "url": "http://localhost:3000/",
+                "selector": "main > div:nth-of-type(2) > div:nth-of-type(2)"
+              },
+              {
+                "url": "http://localhost:3000/",
+                "selector": "main > div:nth-of-type(2) > div:nth-of-type(3)"
+              }
+            ]
+          },
+          {
+            "value": "8px",
+            "count": 5,
+            "area": 23953,
+            "sources": [
+              {
+                "url": "http://localhost:3000/",
+                "selector": "body > div:nth-of-type(2) > aside > div > div > button"
+              },
+              {
+                "url": "http://localhost:3000/",
+                "selector": "header > div:nth-of-type(2) > label"
+              },
+              {
+                "url": "http://localhost:3000/",
+                "selector": "main > div:nth-of-type(1) > button"
+              }
+            ]
+          },
+          {
+            "value": "11px",
+            "count": 3,
+            "area": 4800,
+            "sources": [
+              {
+                "url": "http://localhost:3000/",
+                "selector": "main > div:nth-of-type(2) > div:nth-of-type(1) > span"
+              },
+              {
+                "url": "http://localhost:3000/",
+                "selector": "main > div:nth-of-type(2) > div:nth-of-type(2) > span"
+              },
+              {
+                "url": "http://localhost:3000/",
+                "selector": "main > div:nth-of-type(2) > div:nth-of-type(3) > span"
+              }
+            ]
+          },
+          {
+            "value": "50%",
+            "count": 2,
+            "area": 1332,
+            "sources": [
+              {
+                "url": "http://localhost:3000/",
+                "selector": "body > div:nth-of-type(2) > aside > div > div > span"
+              },
+              {
+                "url": "http://localhost:3000/",
+                "selector": "header > div:nth-of-type(2) > span > i"
+              }
+            ]
+          },
+          {
+            "value": "12px",
+            "count": 1,
+            "area": 1444,
+            "sources": [
+              {
+                "url": "http://localhost:3000/",
+                "selector": "body > div:nth-of-type(2) > aside > a > span:nth-of-type(1)"
+              }
+            ]
+          },
+          {
+            "value": "99px",
+            "count": 1,
+            "area": 2404,
+            "sources": [
+              {
+                "url": "http://localhost:3000/",
+                "selector": "header > div:nth-of-type(2) > span"
+              }
+            ]
+          }
+        ]
+      },
+      "shadows": [
+        {
+          "value": "rgba(39, 33, 75, 0.016) 0px 2px 4px 0px",
+          "count": 5,
+          "sources": [
+            {
+              "url": "http://localhost:3000/",
+              "selector": "main > div:nth-of-type(2) > div:nth-of-type(1)"
+            },
+            {
+              "url": "http://localhost:3000/",
+              "selector": "main > div:nth-of-type(2) > div:nth-of-type(2)"
+            },
+            {
+              "url": "http://localhost:3000/",
+              "selector": "main > div:nth-of-type(2) > div:nth-of-type(3)"
+            }
+          ]
+        },
+        {
+          "value": "rgba(112, 87, 232, 0.173) 0px 4px 9px 0px",
+          "count": 1,
+          "sources": [
+            {
+              "url": "http://localhost:3000/",
+              "selector": "body > div:nth-of-type(2) > aside > a > span:nth-of-type(1)"
+            }
+          ]
+        },
+        {
+          "value": "rgba(74, 51, 175, 0.137) 0px 2px 4px 0px",
+          "count": 1,
+          "sources": [
+            {
+              "url": "http://localhost:3000/",
+              "selector": "main > div:nth-of-type(1) > button"
+            }
+          ]
+        }
+      ],
+      "gradients": [
+        {
+          "value": "linear-gradient(145deg, rgb(138, 114, 255), rgb(96, 70, 223))",
+          "count": 1,
+          "area": 1444,
+          "sources": [
+            {
+              "url": "http://localhost:3000/",
+              "selector": "body > div:nth-of-type(2) > aside > a > span:nth-of-type(1)"
+            }
+          ]
+        }
+      ]
+    },
+    "hover": [],
+    "logo": {
+      "source": "none",
+      "url": null,
+      "selector": null
+    },
+    "iconFont": null
+  }
+}

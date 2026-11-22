@@ -1,0 +1,235 @@
+{
+  "_provenance": {
+    "writtenBy": "skills/replica/scripts/cap-probe.mjs",
+    "writtenAt": "2026-11-22T22:45:35.065Z",
+    "baseWidth": 1440,
+    "urls": [
+      "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1",
+      "http://localhost:3001/customer"
+    ],
+    "probeWidth": 2560,
+    "probeNote": "from DESIGN.json",
+    "tolerance": 20
+  },
+  "urls": [
+    "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1",
+    "http://localhost:3001/customer"
+  ],
+  "probeNote": "from DESIGN.json",
+  "live": {
+    "baseWidth": 1440,
+    "probeWidth": 2560,
+    "root": {
+      "selector": "body > div.shell > div.workspace > main",
+      "isBody": false,
+      "leaves": 54,
+      "w2": 1320
+    },
+    "origins": [
+      {
+        "kind": "shell",
+        "px": 1320,
+        "via": "max-width",
+        "selector": "body > div.shell > div.workspace > main",
+        "tier": 0,
+        "share": 1,
+        "section": -1,
+        "w1": 1202,
+        "maxWidth": "1320px"
+      },
+      {
+        "kind": "module",
+        "px": 388,
+        "via": "fixed",
+        "selector": "div.workspace > main > div.page-heading > div",
+        "tier": 2,
+        "share": 0.04,
+        "section": 0,
+        "w1": 388,
+        "maxWidth": "none"
+      },
+      {
+        "kind": "module",
+        "px": 252,
+        "via": "fixed",
+        "selector": "main > section.card.chart-card > div.card-heading.scan-heading > div",
+        "tier": 3,
+        "share": 0.04,
+        "section": 2,
+        "w1": 252,
+        "maxWidth": "none"
+      },
+      {
+        "kind": "module",
+        "px": 265,
+        "via": "fixed",
+        "selector": "main > section.card.table-card > div.card-heading > div",
+        "tier": 3,
+        "share": 0.04,
+        "section": 3,
+        "w1": 265,
+        "maxWidth": "none"
+      }
+    ],
+    "modules": [
+      {
+        "index": 0,
+        "selector": "div.shell > div.workspace > main > div.page-heading",
+        "px": 388,
+        "capSelector": "div.workspace > main > div.page-heading > div"
+      },
+      {
+        "index": 1,
+        "selector": "div.shell > div.workspace > main > div.stats",
+        "px": null,
+        "capSelector": null
+      },
+      {
+        "index": 2,
+        "selector": "div.shell > div.workspace > main > section.card.chart-card",
+        "px": 252,
+        "capSelector": "main > section.card.chart-card > div.card-heading.scan-heading > div"
+      },
+      {
+        "index": 3,
+        "selector": "div.shell > div.workspace > main > section.card.table-card",
+        "px": 265,
+        "capSelector": "main > section.card.table-card > div.card-heading > div"
+      }
+    ],
+    "shellMaxWidth": 1320,
+    "contentMaxWidth": 1320,
+    "contentFrom": "shell",
+    "maxCap": 1320,
+    "fluid": false,
+    "probeNote": "pinned",
+    "candidates": 39
+  },
+  "build": {
+    "baseWidth": 1440,
+    "probeWidth": 2560,
+    "root": {
+      "selector": "body.appear > main",
+      "isBody": false,
+      "leaves": 54,
+      "w2": 1320
+    },
+    "origins": [
+      {
+        "kind": "shell",
+        "px": 1320,
+        "via": "max-width",
+        "selector": "body.appear > main",
+        "tier": 0,
+        "share": 1,
+        "section": -1,
+        "w1": 1202,
+        "maxWidth": "1320px"
+      },
+      {
+        "kind": "module",
+        "px": 388,
+        "via": "fixed",
+        "selector": "div.page-header-wrapper > div.page-header.block > div.page-heading > div",
+        "tier": 5,
+        "share": 0.04,
+        "section": 0,
+        "w1": 388,
+        "maxWidth": "none"
+      },
+      {
+        "kind": "module",
+        "px": 252,
+        "via": "fixed",
+        "selector": "div.scan-activity.block > section.card.chart-card > div.card-heading.scan-heading > div",
+        "tier": 6,
+        "share": 0.04,
+        "section": 2,
+        "w1": 252,
+        "maxWidth": "none"
+      },
+      {
+        "kind": "module",
+        "px": 265,
+        "via": "fixed",
+        "selector": "div.code-table.block > section.card.table-card > div.card-heading > div",
+        "tier": 6,
+        "share": 0.04,
+        "section": 3,
+        "w1": 265,
+        "maxWidth": "none"
+      }
+    ],
+    "modules": [
+      {
+        "index": 0,
+        "selector": "body.appear > main > div.section.page-header-container > div.page-header-wrapper",
+        "px": 388,
+        "capSelector": "div.page-header-wrapper > div.page-header.block > div.page-heading > div"
+      },
+      {
+        "index": 1,
+        "selector": "body.appear > main > div.section.page-header-container > div.stats-wrapper",
+        "px": null,
+        "capSelector": null
+      },
+      {
+        "index": 2,
+        "selector": "body.appear > main > div.section.page-header-container > div.scan-activity-wrapper",
+        "px": 252,
+        "capSelector": "div.scan-activity.block > section.card.chart-card > div.card-heading.scan-heading > div"
+      },
+      {
+        "index": 3,
+        "selector": "body.appear > main > div.section.page-header-container > div.code-table-wrapper",
+        "px": 265,
+        "capSelector": "div.code-table.block > section.card.table-card > div.card-heading > div"
+      }
+    ],
+    "shellMaxWidth": 1320,
+    "contentMaxWidth": 1320,
+    "contentFrom": "shell",
+    "maxCap": 1320,
+    "fluid": false,
+    "probeNote": "pinned",
+    "candidates": 51
+  },
+  "compare": {
+    "probeWidth": 2560,
+    "rows": [
+      {
+        "ok": true,
+        "label": "wrapper cap",
+        "detail": "live 1320px = build 1320px (±20)",
+        "advisory": false
+      },
+      {
+        "ok": true,
+        "label": "module 1/4",
+        "detail": "388px = 388px",
+        "advisory": false
+      },
+      {
+        "ok": true,
+        "label": "module 2/4",
+        "detail": "full-bleed on both",
+        "advisory": false
+      },
+      {
+        "ok": true,
+        "label": "module 3/4",
+        "detail": "252px = 252px",
+        "advisory": false
+      },
+      {
+        "ok": true,
+        "label": "module 4/4",
+        "detail": "265px = 265px",
+        "advisory": false
+      }
+    ],
+    "fails": 0,
+    "pass": true
+  },
+  "evidence": "stardust/replica/gates/overview-2560/cap-iter.json"
+}

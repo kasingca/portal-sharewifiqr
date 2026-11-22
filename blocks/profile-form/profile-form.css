@@ -1,0 +1,34 @@
+.profile-form .profile-card {
+  max-width: 760px;
+  padding: 23px;
+}
+
+.profile-form .profile-user-id {
+  display: grid;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+.profile-form .profile-user-id label {
+  font-weight: 650;
+  color: #434057;
+}
+
+.profile-form .profile-user-id > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.profile-form .profile-user-id input {
+  flex: 1 1 17rem;
+  background: #faf9fd;
+  font-family: ui-monospace, monospace;
+  font-size: 13px;
+}
+
+.profile-form .two-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+}

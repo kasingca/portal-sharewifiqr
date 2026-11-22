@@ -1,0 +1,4 @@
+visual-diff error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1
+Call log:
+[2m  - navigating to "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1", waiting until "networkidle"[22m
+

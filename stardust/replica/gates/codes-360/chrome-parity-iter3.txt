@@ -1,0 +1,13 @@
+chrome-parity @ 360px, tolerance 1px
+  live:  http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/codes (live side from cache stardust/replica/gates/codes-360/chrome-live.json, probed 2026-11-22T22:18:01.309Z — delete the file to re-probe)
+  build: http://localhost:3001/customer/codes
+
+■ header: ✓ parity — 2 paired of 2/2 texts, 3/3 icons
+  region live:  header.topbar — outermost <header>, box 0,0 360×58; selector body > div:nth-of-type(2) > div > header
+  region build: header.header-wrapper — outermost <header>, box 0,0 360×58; selector body > header
+
+■ footer: ✓ parity — 3 paired of 3/3 texts, 0/0 icons
+  region live:  footer — outermost <footer>, box 14,849 332×51; selector body > div:nth-of-type(2) > div > footer
+  region build: footer.footer-wrapper — outermost <footer>, box 14,849 332×51; selector body > footer
+
+✓ chrome parity within tolerance — run crop-compare (pass bar item 5) to confirm in pixels.

@@ -1,160 +1,102 @@
-import { getMetadata } from '../../scripts/aem.js';
-import { loadFragment } from '../fragment/fragment.js';
+import { config, demoMode } from '../../scripts/app/config.js';
+import { getSession } from '../../scripts/app/api.js';
+import { go, href, readRoute } from '../../scripts/app/route.js';
+import {
+  avatar, esc, flushPendingToast, html, icon,
+} from '../../scripts/app/ui.js';
 
-// media query match that indicates mobile/tablet width
-const isDesktop = window.matchMedia('(min-width: 900px)');
+/** Screens whose nav item is another screen's (detail lives under codes, …). */
+const ACTIVE = { detail: 'codes', account: 'customers' };
+/** Screens a paused customer may still open (source: `content[screen]` + sign-in). */
+const PUBLIC_SCREENS = ['help', 'terms', 'privacy', 'signin'];
 
 /**
- * Closes the open nav dropdown (desktop) or the nav menu (mobile) on Escape
- * @param {KeyboardEvent} e keydown event
+ * Reads the nav document (`/customer/nav`, `/admin/nav`): one `sidebar` block whose rows are
+ * `brand | <url>`, `group | <label>`, `signed-out | <label> | <icon>` or
+ * `<screen> | <label> | <icon>`.
  */
-function closeOnEscape(e) {
-  if (e.code === 'Escape') {
-    const nav = document.getElementById('nav');
-    const navSections = nav.querySelector('.nav-sections');
-    if (!navSections) return;
-    const navSectionExpanded = navSections.querySelector('[aria-expanded="true"]');
-    if (navSectionExpanded && isDesktop.matches) {
-      // eslint-disable-next-line no-use-before-define
-      toggleAllNavSections(navSections);
-      navSectionExpanded.focus();
-    } else if (!isDesktop.matches) {
-      // eslint-disable-next-line no-use-before-define
-      toggleMenu(nav, navSections);
-      nav.querySelector('button').focus();
+async function loadNav(path) {
+  const resp = await fetch(`${path}.plain.html`);
+  const doc = html(`<div>${resp.ok ? await resp.text() : ''}</div>`);
+  const rows = [...doc.querySelectorAll('.sidebar > div')]
+    .map((row) => [...row.children].map((cell) => cell.textContent.trim()));
+  const nav = { brand: 'https://www.sharewifiqr.com', groups: [], signedOut: null };
+  rows.forEach(([key, label, iconName]) => {
+    if (key === 'brand') nav.brand = label;
+    else if (key === 'group') nav.groups.push({ label, items: [] });
+    else if (key === 'signed-out') nav.signedOut = { screen: 'signin', label, icon: iconName };
+    else if (key && nav.groups.length) {
+      nav.groups.at(-1).items.push({ screen: key, label, icon: iconName });
     }
-  }
-}
-
-/**
- * Closes the open nav dropdown (desktop) or the nav menu (mobile) when focus leaves the nav
- * @param {FocusEvent} e focusout event
- */
-function closeOnFocusLost(e) {
-  const nav = e.currentTarget;
-  if (!nav.contains(e.relatedTarget)) {
-    const navSections = nav.querySelector('.nav-sections');
-    if (!navSections) return;
-    const navSectionExpanded = navSections.querySelector('[aria-expanded="true"]');
-    if (navSectionExpanded && isDesktop.matches) {
-      // eslint-disable-next-line no-use-before-define
-      toggleAllNavSections(navSections, false);
-    } else if (!isDesktop.matches) {
-      // eslint-disable-next-line no-use-before-define
-      toggleMenu(nav, navSections, false);
-    }
-  }
-}
-
-/**
- * Toggles all nav sections
- * @param {Element} sections The container element
- * @param {Boolean|string} expanded Whether the element should be expanded or collapsed
- */
-function toggleAllNavSections(sections, expanded = false) {
-  if (!sections) return;
-  sections.querySelectorAll('.nav-drop > button').forEach((button) => {
-    button.setAttribute('aria-expanded', expanded);
   });
+  return nav;
+}
+
+function navItem(item, current) {
+  const active = item.screen === current;
+  return `<a class="nav-item${active ? ' current' : ''}"${active ? ' aria-current="page"' : ''} href="${esc(href(item.screen))}">${icon(item.icon, 18)}${esc(item.label)}</a>`;
 }
 
 /**
- * Toggles the entire nav
- * @param {Element} nav The container element
- * @param {Element} navSections The nav sections within the container element
- * @param {*} forceExpanded Optional param to force nav expand behavior when not null
- */
-function toggleMenu(nav, navSections, forceExpanded = null) {
-  const expanded = forceExpanded !== null ? !forceExpanded : nav.getAttribute('aria-expanded') === 'true';
-  const button = nav.querySelector('.nav-hamburger button');
-  document.body.style.overflowY = (expanded || isDesktop.matches) ? '' : 'hidden';
-  // the desktop nav is always expanded, so aria-expanded only applies to the mobile menu
-  if (isDesktop.matches) nav.removeAttribute('aria-expanded');
-  else nav.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-  toggleAllNavSections(navSections, expanded || isDesktop.matches ? 'false' : 'true');
-  button.setAttribute('aria-label', expanded ? 'Open navigation' : 'Close navigation');
-
-  // enable menu collapse on escape keypress
-  if (!expanded || isDesktop.matches) {
-    // collapse menu on escape press
-    window.addEventListener('keydown', closeOnEscape);
-    // collapse menu on focus lost
-    nav.addEventListener('focusout', closeOnFocusLost);
-  } else {
-    window.removeEventListener('keydown', closeOnEscape);
-    nav.removeEventListener('focusout', closeOnFocusLost);
-  }
-}
-
-/**
- * loads and decorates the header, mainly the nav
- * @param {Element} block The header block element
+ * Header block: the portal's application shell. Renders the top bar into <header> and mounts
+ * the sidebar, mobile overlay and impersonation banner beside it on <body>.
+ * @param {Element} block
  */
 export default async function decorate(block) {
-  // load nav as fragment
-  const navMeta = getMetadata('nav');
-  const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
-  const fragment = await loadFragment(navPath);
+  const route = readRoute();
+  const session = await getSession(route);
+  if (session.paused && !PUBLIC_SCREENS.includes(route.screen)) {
+    window.location.replace(href('signin'));
+    return;
+  }
+  const navPath = config('nav') || `/${route.role === 'admin' && !route.impersonating ? 'admin' : 'customer'}/nav`;
+  const nav = await loadNav(navPath);
+  const current = ACTIVE[route.screen] || route.screen;
+  const { adminView, profile, signedIn } = session;
 
-  // decorate nav DOM
+  const groups = nav.groups.map((group, index) => {
+    let items = group.items.map((item) => navItem(item, current)).join('');
+    if (index === 0 && !signedIn && nav.signedOut) items = navItem(nav.signedOut, current);
+    return `<div class="nav-label${index ? ' support-label' : ''}">${esc(group.label)}</div>${items}`;
+  }).join('');
+
+  const account = adminView
+    ? `<span class="avatar violet">${icon('shield-check', 19)}</span>`
+    : avatar(session.customer);
+  const breadcrumbHome = href(!signedIn ? 'signin' : (adminView && 'customers') || 'overview');
+
+  const sidebar = html(`<aside class="sidebar">
+      <a class="brand" href="${esc(nav.brand)}" aria-label="ShareWiFiQR home"><span class="brand-icon">${icon('wifi', 24)}</span><span>ShareWiFi<span class="brand-qr">QR</span><small>WORKSPACE</small></span></a>
+      <nav aria-label="Workspace navigation">${groups}</nav>
+      <div class="sidebar-bottom"><div class="sidebar-account">${account}<div><strong>${esc(`${profile.first} ${profile.last}`)}</strong><small>${adminView ? 'Admin workspace' : 'Customer workspace'}</small></div><button class="icon-button" aria-label="Sign out">${icon('log-out', 17)}</button></div></div>
+    </aside>`);
+  const overlay = html('<button class="mobile-overlay" aria-label="Close navigation"></button>');
+
   block.textContent = '';
-  const nav = document.createElement('nav');
-  nav.id = 'nav';
-  while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
+  block.append(html(`<div class="topbar"><div class="breadcrumbs"><button class="icon-button mobile-menu" aria-label="Open navigation">${icon('menu', 22)}</button><a href="${esc(breadcrumbHome)}">Portal</a>${icon('chevron-right', 14)}<strong>${esc(config('breadcrumb') || document.title)}</strong></div>
+      <div class="top-actions">${demoMode() ? '<span class="demo"><i></i> Demo mode</span>' : ''}<label class="role"><span class="sr-only">Switch workspace</span>${icon(route.role === 'admin' ? 'shield-check' : 'user-round', 17)}<select><option value="customer">Customer view</option><option value="admin">Administrator view</option></select>${icon('chevron-down', 15)}</label></div>
+    </div>`));
+  // the sidebar and banner are the shell's own landmarks, beside <header> like the source's
+  document.body.prepend(overlay, sidebar);
 
-  const classes = ['brand', 'sections', 'tools'];
-  classes.forEach((c, i) => {
-    const section = nav.children[i];
-    if (section) section.classList.add(`nav-${c}`);
-  });
-
-  const navBrand = nav.querySelector('.nav-brand');
-  const brandLink = navBrand.querySelector('.button');
-  if (brandLink) {
-    brandLink.className = '';
-    brandLink.closest('.button-container').className = '';
+  if (route.impersonating && session.customerKnown) {
+    const banner = html(`<div class="impersonation">${icon('eye', 17)}<span>Viewing as <strong>${esc(`${session.customer.first} ${session.customer.last}`)}</strong></span><button class="button secondary">Exit customer view</button></div>`);
+    banner.querySelector('button').addEventListener('click', () => go('account', { role: 'admin', id: route.impersonating, impersonating: null }));
+    block.closest('header').after(banner);
   }
 
-  const navSections = nav.querySelector('.nav-sections');
-  if (navSections) {
-    navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
-      const subList = navSection.querySelector(':scope > ul');
-      if (!subList) return;
-      navSection.classList.add('nav-drop');
-      // wrap the dropdown label in a button so it is announced as expandable
-      const button = document.createElement('button');
-      button.type = 'button';
-      button.setAttribute('aria-expanded', false);
-      [...navSection.childNodes].forEach((node) => {
-        if (node !== subList) button.append(node);
-      });
-      navSection.prepend(button);
-      button.addEventListener('click', () => {
-        const expanded = button.getAttribute('aria-expanded') === 'true';
-        if (isDesktop.matches) {
-          button.focus();
-          toggleAllNavSections(navSections);
-        }
-        button.setAttribute('aria-expanded', !expanded);
-      });
-    });
-  }
+  const setMobile = (open) => {
+    sidebar.classList.toggle('open', open);
+    overlay.classList.toggle('open', open);
+  };
+  block.querySelector('.mobile-menu').addEventListener('click', () => setMobile(true));
+  overlay.addEventListener('click', () => setMobile(false));
 
-  // hamburger for mobile
-  const hamburger = document.createElement('div');
-  hamburger.classList.add('nav-hamburger');
-  hamburger.innerHTML = `<button type="button" aria-controls="nav" aria-label="Open navigation">
-      <span class="nav-hamburger-icon"></span>
-    </button>`;
-  hamburger.addEventListener('click', () => toggleMenu(nav, navSections));
-  nav.prepend(hamburger);
-  nav.setAttribute('aria-expanded', 'false');
-  // prevent mobile nav behavior on window resize
-  toggleMenu(nav, navSections, isDesktop.matches);
-  isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
+  const changeRole = (role) => go('signin', { role, impersonating: null });
+  const select = block.querySelector('.role select');
+  select.value = route.role;
+  select.addEventListener('change', () => changeRole(select.value));
+  sidebar.querySelector('[aria-label="Sign out"]').addEventListener('click', () => changeRole(route.role));
 
-  const navWrapper = document.createElement('div');
-  navWrapper.className = 'nav-wrapper';
-  navWrapper.append(nav);
-  block.append(navWrapper);
+  flushPendingToast();
 }

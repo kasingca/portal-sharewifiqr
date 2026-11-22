@@ -1,0 +1,9 @@
+overview	/customer/b2693d9c2124f3ca9547b897794ac6a1	/customer
+codes	/customer/b2693d9c2124f3ca9547b897794ac6a1/codes	/customer/codes
+detail	/customer/b2693d9c2124f3ca9547b897794ac6a1/codes/studio-guest	/customer/codes/detail?id=studio-guest
+billing	/customer/b2693d9c2124f3ca9547b897794ac6a1/billing	/customer/billing
+profile	/customer/b2693d9c2124f3ca9547b897794ac6a1/profile	/customer/profile
+content	/customer/b2693d9c2124f3ca9547b897794ac6a1/help	/customer/help
+signin	/customer/sign-in	/customer/sign-in
+customers	/admin	/admin
+account	/admin/customers/maya	/admin/customers/account?id=maya

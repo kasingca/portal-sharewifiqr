@@ -1,0 +1,185 @@
+{
+ "url": "http://localhost:3001/customer/sign-in",
+ "at": "2026-11-22T22:11:51.703Z",
+ "width": 1440,
+ "status": 200,
+ "settlePasses": 2,
+ "docH": 900,
+ "pageW": 1440,
+ "counts": {
+  "textClipped": 0,
+  "textHidden": 0,
+  "controlHidden": 0,
+  "controlClipped": 0,
+  "clamped": 0,
+  "collapsed": 0,
+  "scrollHidden": 0,
+  "horizontal": 1,
+  "offPage": 0,
+  "textNodes": 19,
+  "controls": 9,
+  "total": 0
+ },
+ "findings": [
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "cut": 12,
+   "path": "div.sidebar-bottom > div.sidebar-account > div > small",
+   "text": "customer workspace",
+   "clipper": "small",
+   "rect": {
+    "l": 66,
+    "t": 869,
+    "r": 185,
+    "b": 884,
+    "w": 119,
+    "h": 15
+   },
+   "clip": {
+    "l": 66,
+    "t": 869,
+    "r": 173,
+    "b": 884,
+    "w": 107,
+    "h": 15
+   },
+   "lines": 2
+  }
+ ],
+ "textBoxes": [
+  {
+   "x": 74,
+   "y": 27,
+   "w": 83,
+   "h": 22
+  },
+  {
+   "x": 157,
+   "y": 27,
+   "w": 25,
+   "h": 22
+  },
+  {
+   "x": 74,
+   "y": 53,
+   "w": 73,
+   "h": 11
+  },
+  {
+   "x": 28,
+   "y": 109,
+   "w": 78,
+   "h": 12
+  },
+  {
+   "x": 58,
+   "y": 144,
+   "w": 46,
+   "h": 17
+  },
+  {
+   "x": 28,
+   "y": 207,
+   "w": 59,
+   "h": 12
+  },
+  {
+   "x": 58,
+   "y": 242,
+   "w": 78,
+   "h": 17
+  },
+  {
+   "x": 27,
+   "y": 860,
+   "w": 20,
+   "h": 15
+  },
+  {
+   "x": 66,
+   "y": 850,
+   "w": 71,
+   "h": 16
+  },
+  {
+   "x": 66,
+   "y": 869,
+   "w": 119,
+   "h": 15
+  },
+  {
+   "x": 66,
+   "y": 869,
+   "w": 92,
+   "h": 15
+  },
+  {
+   "x": 286,
+   "y": 25,
+   "w": 38,
+   "h": 17
+  },
+  {
+   "x": 356,
+   "y": 25,
+   "w": 46,
+   "h": 17
+  },
+  {
+   "x": 1100,
+   "y": 27,
+   "w": 66,
+   "h": 13
+  },
+  {
+   "x": 644,
+   "y": 328,
+   "w": 221,
+   "h": 35
+  },
+  {
+   "x": 644,
+   "y": 374,
+   "w": 386,
+   "h": 17
+  },
+  {
+   "x": 658,
+   "y": 423,
+   "w": 150,
+   "h": 17
+  },
+  {
+   "x": 286,
+   "y": 866,
+   "w": 110,
+   "h": 15
+  },
+  {
+   "x": 1224,
+   "y": 866,
+   "w": 109,
+   "h": 15
+  },
+  {
+   "x": 1351,
+   "y": 866,
+   "w": 41,
+   "h": 15
+  }
+ ],
+ "groups": [
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "n": 1,
+   "clipper": "small",
+   "path": "div.sidebar-bottom > div.sidebar-account > div > small",
+   "text": "customer workspace",
+   "cutMin": 12,
+   "cutMax": 12
+  }
+ ],
+ "tier": "chrome"
+}

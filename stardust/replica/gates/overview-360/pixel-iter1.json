@@ -1,0 +1,86 @@
+{
+  "a": "stardust/replica/gates/overview-360/live.png",
+  "b": "stardust/replica/gates/overview-360/build.png",
+  "compared": {
+    "width": 360,
+    "height": 1209,
+    "mode": "overlap"
+  },
+  "heightDelta": 0,
+  "differingPixels": 3633,
+  "pct": 0.83,
+  "threshold": 10,
+  "pass": true,
+  "diff": "stardust/replica/gates/overview-360/diff-iter1.png",
+  "masks": [],
+  "maskedRows": 0,
+  "textPct": null,
+  "textBoxes": null,
+  "textPixels": null,
+  "bands": [
+    {
+      "y0": 0,
+      "y1": 500,
+      "pct": 0
+    },
+    {
+      "y0": 500,
+      "y1": 1000,
+      "pct": 0
+    },
+    {
+      "y0": 1000,
+      "y1": 1209,
+      "pct": 4.8
+    }
+  ],
+  "verdict": "aligned",
+  "aligned": {
+    "used": false,
+    "pct": 0.83,
+    "differingPixels": 3633,
+    "compared": {
+      "width": 360,
+      "height": 1209,
+      "mode": "overlap"
+    },
+    "steps": [],
+    "maxOffset": 0,
+    "totalShift": 0,
+    "insertedRows": 0,
+    "deletedRows": 0,
+    "bands": [
+      {
+        "y0": 0,
+        "y1": 500,
+        "pct": 0,
+        "unaligned": 0
+      },
+      {
+        "y0": 500,
+        "y1": 1000,
+        "pct": 0,
+        "unaligned": 0
+      },
+      {
+        "y0": 1000,
+        "y1": 1209,
+        "pct": 4.8,
+        "unaligned": 4.8
+      }
+    ],
+    "diff": null,
+    "reason": "no offset step found",
+    "candidate": {
+      "pct": 0.83,
+      "steps": 0,
+      "totalShift": 0
+    }
+  },
+  "offsets": {
+    "bound": null,
+    "totalShift": 0,
+    "pass": true
+  },
+  "reason": null
+}

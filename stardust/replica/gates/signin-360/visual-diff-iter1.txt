@@ -1,0 +1,60 @@
+
+Visual diff @ 360px (profile "generic") — screenshots in stardust/replica/gates/signin-360/vdiff-iter1/
+
+build red flags (advisory): none
+
+Full metrics JSON (compare source vs build: heading colors, eyebrow colors, image dims, full-bleed):
+{
+ "source": {
+  "viewport": 360,
+  "blankRender": false,
+  "mainHeight": 891,
+  "textLen": 94,
+  "images": [],
+  "headings": [
+   {
+    "tag": "h1",
+    "text": "Customer sign-in",
+    "color": "rgb(33, 29, 53)",
+    "fontSize": "30px",
+    "family": "system-ui",
+    "fontLoaded": true
+   }
+  ],
+  "eyebrows": [],
+  "flushText": [],
+  "contentBoxes": [
+   {
+    "sel": "card",
+    "width": 332,
+    "left": 14
+   }
+  ]
+ },
+ "build": {
+  "viewport": 360,
+  "blankRender": false,
+  "mainHeight": 566,
+  "textLen": 94,
+  "images": [],
+  "headings": [
+   {
+    "tag": "h1",
+    "text": "Customer sign-in",
+    "color": "rgb(33, 29, 53)",
+    "fontSize": "30px",
+    "family": "system-ui",
+    "fontLoaded": true
+   }
+  ],
+  "eyebrows": [],
+  "flushText": [],
+  "contentBoxes": [
+   {
+    "sel": "card",
+    "width": 332,
+    "left": 14
+   }
+  ]
+ }
+}

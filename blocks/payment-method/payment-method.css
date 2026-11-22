@@ -1,0 +1,44 @@
+.payment-method .payment-card {
+  max-width: 760px;
+  padding: 23px;
+  margin-top: 16px;
+}
+
+.payment-method .payment-card > p {
+  margin-top: 4px;
+}
+
+.payment-method .provider-options {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.payment-method .provider-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 9px 12px;
+  cursor: pointer;
+}
+
+.payment-method .provider-option:has(input:checked) {
+  border-color: #a695f0;
+  background: #faf8ff;
+}
+
+.payment-method .provider-option input {
+  width: auto;
+  accent-color: var(--purple);
+}
+
+.payment-method .provider-option small {
+  font-weight: 400;
+  color: var(--muted);
+  margin-top: 3px;
+}

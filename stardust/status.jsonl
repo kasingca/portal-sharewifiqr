@@ -1,0 +1,14 @@
+{"ts":"2026-11-22T20:51:29Z","skill":"stardust:extract","phase":"discovery","event":"start","detail":"single page, --dynamics"}
+{"ts":"2026-11-22T20:52:45Z","skill":"stardust:extract","phase":"discovery","event":"blocked","detail":"Vercel Deployment Protection: entry 302 -> vercel.com/sso-api login wall; captured only vercel.com/login","next":"user: bypass token, public URL, or local build"}
+{"ts":"2026-11-22T21:05:11Z","skill":"stardust:extract","phase":"discovery","event":"start","detail":"retarget to http://localhost:3000 (Vercel preview is SSO-protected)"}
+{"ts":"2026-11-22T21:06:50Z","skill":"stardust:extract","phase":"discovery","event":"end","detail":"1/1 live (localhost:3000), vision ok"}
+{"ts":"2026-11-22T21:06:50Z","skill":"stardust:extract","phase":"brand-surface-extraction","event":"start"}
+{"ts":"2026-11-22T21:11:51Z","skill":"stardust:extract","phase":"brand-surface-extraction","event":"end","detail":"1 page, register product, 2 mechanical + 2 agent tensions","artifact":"stardust/current/brand-review.html","next":"stardust direct"}
+{"ts":"2026-11-22T21:14:18Z","skill":"stardust:replica","phase":"extract","event":"start","detail":"prep+dynamics, personas customer/admin"}
+{"ts":"2026-11-22T21:26:05Z","skill":"stardust:replica","phase":"extract","event":"end","detail":"16/16 live (localhost:3000), 9 types: overview,codes,code-detail,billing,profile,content,sign-in,customers,account; vision ok"}
+{"ts":"2026-11-22T21:26:05Z","skill":"stardust:replica","phase":"preserve-direction","event":"start"}
+{"ts":"2026-11-22T21:26:46Z","skill":"stardust:replica","phase":"preserve-direction","event":"end","detail":"promoted current spec; register R-01..R-03 (no visual deltas); 20 dynamic rows, all reproduce via api.js"}
+{"ts":"2026-11-22T21:26:46Z","skill":"stardust:replica","phase":"recreate","event":"start"}
+{"ts":"2026-11-22T21:37:07Z","skill":"stardust:replica","phase":"source-fidelity-gate","event":"start","detail":"overview first"}
+{"ts":"2026-11-22T22:48:38Z","skill":"stardust:replica","phase":"recreate","event":"end","detail":"11 blocks + shell on EDS; 22 da.live docs in ./content"}
+{"ts":"2026-11-22T22:52:28Z","skill":"stardust:replica","phase":"source-fidelity-gate","event":"end","detail":"9/9 archetypes pass @1440 and @360 (pixel 0.04–0.83%, Δh 0 except billing@360 7px≤8, content 0🔴, chrome ✓, clipped 0, overflow ok); cap-probe PASS @2560; post-lint regression 0.00% ×18","next":"user: push ./content to da.live, preview, published-origin gate"}

@@ -166,6 +166,9 @@ async function loadEager(doc) {
   if (main) {
     decorateMain(main);
     document.body.classList.add('appear');
+    // the portal's app shell (sidebar, top bar, footer) renders alongside the first section
+    loadHeader(doc.querySelector('body > header'));
+    loadFooter(doc.querySelector('body > footer'));
     await loadSection(main.querySelector('.section'), waitForFirstImage);
   }
 
@@ -184,16 +187,12 @@ async function loadEager(doc) {
  * @param {Element} doc The container element
  */
 async function loadLazy(doc) {
-  loadHeader(doc.querySelector('body > header'));
-
   const main = doc.querySelector('main');
   await loadSections(main);
 
   const { hash } = window.location;
   const element = hash ? doc.getElementById(hash.substring(1)) : false;
   if (hash && element) element.scrollIntoView();
-
-  loadFooter(doc.querySelector('body > footer'));
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();

@@ -1,0 +1,178 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-11-22T21:16:49.540Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "customer-b2693d9c2124f3ca9547b897794ac6a1-profile",
+  "url": "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/profile",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-11-22T21:16:49.540Z",
+  "finalUrl": "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/profile",
+  "title": "ShareWiFiQR | Portal",
+  "description": "Manage Wi-Fi QR codes and track scans.",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "My profile"
+    },
+    {
+      "tag": "h2",
+      "text": "Personal information"
+    },
+    {
+      "tag": "h2",
+      "text": "Payment method"
+    }
+  ],
+  "body": [
+    "Update your personal information and payment method.",
+    "Choose how you’d like to pay for your subscription. This demo saves your choice in this browser."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "ShareWiFiQRWORKSPACE",
+      "href": "https://www.sharewifiqr.com"
+    },
+    {
+      "label": "Overview",
+      "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1"
+    },
+    {
+      "label": "Wi-Fi QR codes",
+      "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1/codes"
+    },
+    {
+      "label": "Billing",
+      "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1/billing"
+    },
+    {
+      "label": "My profile",
+      "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1/profile"
+    },
+    {
+      "label": "Help center",
+      "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1/help"
+    },
+    {
+      "label": "Portal",
+      "href": "/customer/b2693d9c2124f3ca9547b897794ac6a1"
+    },
+    {
+      "label": "Copy ID",
+      "href": null
+    },
+    {
+      "label": "Save changes",
+      "href": null
+    },
+    {
+      "label": "Save payment method",
+      "href": null
+    },
+    {
+      "label": "Terms & conditions",
+      "href": null
+    },
+    {
+      "label": "Privacy",
+      "href": null
+    }
+  ],
+  "links": [
+    "https://www.sharewifiqr.com/",
+    "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1",
+    "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/codes",
+    "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/billing",
+    "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/profile",
+    "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/help"
+  ],
+  "media": {
+    "imgs": [],
+    "allImgCount": 0,
+    "cssBackgrounds": [],
+    "modals": [],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--ink": "#211d35",
+    "--muted": "#6d6a80",
+    "--border": "#e9e7f0",
+    "--canvas": "#f8f8fc",
+    "--purple": "#654ce0",
+    "--purple-dark": "#533dc4",
+    "--white": "#fff",
+    "--lightningcss-light": "initial"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 3,
+    "mainTextLen": 355,
+    "realImageCount": 0,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage",
+    "pageSize": {
+      "w": 1440,
+      "h": 942
+    }
+  },
+  "dynamic": {
+    "endpoints": [],
+    "thirdPartyScriptHosts": [],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [
+      {
+        "action": "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/profile",
+        "hasAction": false,
+        "method": "get",
+        "sameOrigin": true,
+        "fieldCount": 3,
+        "fieldNames": [
+          "first",
+          "last",
+          "email"
+        ],
+        "search": false
+      },
+      {
+        "action": "http://localhost:3000/customer/b2693d9c2124f3ca9547b897794ac6a1/profile",
+        "hasAction": false,
+        "method": "get",
+        "sameOrigin": true,
+        "fieldCount": 2,
+        "fieldNames": [
+          "provider"
+        ],
+        "search": false
+      }
+    ],
+    "ariaLiveRegions": 0,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 0,
+      "thirdPartyEndpoints": 0,
+      "thirdPartyScriptHosts": 0,
+      "inlineDataBlobs": 0,
+      "forms": 2,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/customer-b2693d9c2124f3ca9547b897794ac6a1-profile.png",
+  "renderedHtml": "pages/customer-b2693d9c2124f3ca9547b897794ac6a1-profile.html"
+}
