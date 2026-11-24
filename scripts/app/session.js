@@ -24,7 +24,6 @@ export function redirectIfSignedOut(response) {
 }
 
 export async function loadAuthenticatedSession() {
-  if (isShellHost()) return null;
   const response = await fetch(`${apiBase()}/v1/me`, { credentials: 'include', cache: 'no-store' });
   if (redirectIfSignedOut(response)) return null;
   if (response.status !== 200) throw new Error('Unable to load session');
