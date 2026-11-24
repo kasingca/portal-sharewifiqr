@@ -8,6 +8,9 @@
  */
 import { apiBase, apiMode } from './config.js';
 import {
+  getAuthenticatedSession, loadAuthenticatedSession, redirectIfSignedOut,
+} from './session.js';
+import {
   billingMonth, customerDirectory, customerIds, demoAdmin, load, monthlyPayments, planAt,
   plans, save, scanTotal, schedulePlanChange,
 } from './mock.js';
@@ -24,6 +27,27 @@ async function request(method, path, body) {
     body: body ? JSON.stringify(body) : undefined,
   });
   if (!response.ok) throw new Error(`${method} ${path} failed: ${response.status}`);
+  return response.status === 204 ? null : response.json();
+}
+
+async function sessionRequest(method, path, body) {
+  const headers = {};
+  if (body) {
+    const token = getAuthenticatedSession()?.csrfToken;
+    if (!token) throw new Error('Missing session token');
+    headers['Content-Type'] = 'application/json';
+    headers['X-CSRF-Token'] = token;
+  }
+  const response = await fetch(`${apiBase()}${path}`, {
+    method,
+    credentials: 'include',
+    cache: 'no-store',
+    headers,
+    body: body ? JSON.stringify(body) : undefined,
+  });
+  if (redirectIfSignedOut(response) || !response.ok) {
+    throw new Error(`${method} ${path} failed: ${response.status}`);
+  }
   return response.status === 204 ? null : response.json();
 }
 
@@ -135,10 +159,13 @@ export async function updateCustomer(id, fields) {
   });
 }
 
-/** PATCH /admin/me */
-export async function saveAdminProfile(fields) {
-  if (live()) return request('PATCH', '/admin/me', fields);
-  return mutate((data) => { data.admin = { ...demoAdmin, ...fields }; return data.admin; });
+export function getSignedInProfile() {
+  return getAuthenticatedSession()?.actor;
+}
+
+export async function saveSignedInProfile(names) {
+  await sessionRequest('PATCH', '/v1/me', names);
+  return (await loadAuthenticatedSession())?.actor;
 }
 
 /** GET /customers/{customer}/billing */
@@ -169,8 +196,25 @@ export async function schedulePlan(customer, planId) {
   });
 }
 
-/** PUT /customers/{customer}/billing/payment-method */
-export async function savePaymentMethod(customer, method) {
-  if (live()) return request('PUT', `/customers/${customer}/billing/payment-method`, { method });
-  return updateCustomer(customer, { paymentMethod: method });
+function paymentMethodPath() {
+  const { actor, effectiveCustomer } = getAuthenticatedSession() || {};
+  if (actor?.role !== 'customer' || !effectiveCustomer?.publicId) {
+    throw new Error('No signed-in customer');
+  }
+  return `/v1/customers/${encodeURIComponent(effectiveCustomer.publicId)}/payment-method`;
+}
+
+function readProvider({ paymentMethod }) {
+  if (paymentMethod === null) return null;
+  const { provider } = paymentMethod || {};
+  if (provider !== 'stripe' && provider !== 'paypal') throw new Error('Invalid payment method');
+  return provider;
+}
+
+export async function getPaymentMethod() {
+  return readProvider(await sessionRequest('GET', paymentMethodPath()));
+}
+
+export async function savePaymentMethod(provider) {
+  return readProvider(await sessionRequest('PUT', paymentMethodPath(), { provider }));
 }
