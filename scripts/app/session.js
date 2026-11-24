@@ -4,9 +4,31 @@
  * authorizes every protected operation.
  */
 import { getMetadata } from '../aem.js';
+import { apiBase } from './config.js';
 
-const ME = 'https://api.sharewifiqr.com/v1/me';
 const DESTINATIONS = ['/customer', '/admin'];
+let session;
+
+export function getAuthenticatedSession() {
+  return session;
+}
+
+export function redirectIfSignedOut(response) {
+  if (response.status !== 401) return false;
+  session = undefined;
+  window.location.replace('/');
+  return true;
+}
+
+export async function loadAuthenticatedSession() {
+  const response = await fetch(`${apiBase()}/v1/me`, { credentials: 'include', cache: 'no-store' });
+  if (redirectIfSignedOut(response)) return null;
+  if (response.status !== 200) throw new Error('Unable to load session');
+  const data = await response.json();
+  if (!DESTINATIONS.includes(data?.destination)) throw new Error('Invalid session destination');
+  session = data;
+  return session;
+}
 
 /** The workspace root of the current path ('/customer' | '/admin'), or null. */
 function workspace() {
@@ -33,25 +55,14 @@ export default async function checkSession() {
     return false;
   };
 
-  let response;
+  let current;
   try {
-    response = await fetch(ME, { credentials: 'include', cache: 'no-store' });
+    current = await loadAuthenticatedSession();
   } catch {
     return fail();
   }
-  if (response.status === 401) {
-    window.location.replace('/');
-    return false;
-  }
-  if (response.status !== 200) return fail();
-
-  let destination;
-  try {
-    ({ destination } = await response.json());
-  } catch {
-    return fail();
-  }
-  if (!DESTINATIONS.includes(destination)) return fail();
+  if (!current) return false;
+  const { destination } = current;
 
   // an administrator viewing a customer workspace (`/customer…?as=<id>`) stays on it
   const viewingAs = destination === '/admin' && root === '/customer'
