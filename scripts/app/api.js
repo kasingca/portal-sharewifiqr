@@ -163,9 +163,13 @@ export function getSignedInProfile() {
   return getAuthenticatedSession()?.actor;
 }
 
+export async function loadSignedInProfile() {
+  return (await loadAuthenticatedSession())?.actor;
+}
+
 export async function saveSignedInProfile(names) {
   await sessionRequest('PATCH', '/v1/me', names);
-  return (await loadAuthenticatedSession())?.actor;
+  return loadSignedInProfile();
 }
 
 /** GET /customers/{customer}/billing */
