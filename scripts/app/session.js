@@ -7,6 +7,7 @@ import { getMetadata } from '../aem.js';
 import { apiBase } from './config.js';
 
 const DESTINATIONS = ['/customer', '/admin'];
+const AEM_LIVE_ORIGIN = 'https://main--portal-sharewifiqr--kasingca.aem.live';
 let session;
 
 export function getAuthenticatedSession() {
@@ -16,7 +17,7 @@ export function getAuthenticatedSession() {
 export function redirectIfSignedOut(response) {
   if (response.status !== 401) return false;
   session = undefined;
-  window.location.replace('/');
+  if (window.location.origin !== AEM_LIVE_ORIGIN) window.location.replace('/');
   return true;
 }
 
@@ -41,6 +42,7 @@ function workspace() {
  * @returns {Promise<boolean>} true when the page may render
  */
 export default async function checkSession() {
+  if (window.location.origin === AEM_LIVE_ORIGIN) return true;
   const root = workspace();
   if (!root || getMetadata('signed-out') === 'true') return true;
 
