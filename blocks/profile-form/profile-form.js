@@ -1,4 +1,4 @@
-import { getSignedInProfile, saveSignedInProfile } from '../../scripts/app/api.js';
+import { loadSignedInProfile, saveSignedInProfile } from '../../scripts/app/api.js';
 import {
   copyText, esc, html, icon, readConfig, toast,
 } from '../../scripts/app/ui.js';
@@ -9,10 +9,22 @@ import {
  * Config: `heading`.
  * @param {Element} block
  */
-export default function decorate(block) {
+export default async function decorate(block) {
   const cfg = readConfig(block);
-  const profile = getSignedInProfile();
   block.textContent = '';
+  const status = document.createElement('p');
+  status.setAttribute('role', 'status');
+  status.textContent = 'Loading your profile…';
+  block.append(status);
+
+  let profile;
+  try {
+    profile = await loadSignedInProfile();
+  } catch {
+    status.textContent = 'We couldn’t load your profile. Refresh to try again.';
+    return;
+  }
+  status.remove();
   if (!profile) return;
   const {
     role, publicId, firstName, lastName, email,
